@@ -4,8 +4,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSingleton<IRecipeService,>
+builder.Services.AddSingleton<IRecipeService,RecipeService>();
 
+builder.Services.AddTransient<JSonFileRecipeService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

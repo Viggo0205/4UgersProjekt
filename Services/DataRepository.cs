@@ -4,7 +4,7 @@ namespace _4UgersProjekt.Services
     public interface IHaveIdAndName
     {
         int Id { get; }
-        int Name { get; set; }
+        string Name { get; set; }
     }
 
     public abstract class DataRepository<T> : IService<T> where T : class, IHaveIdAndName
