@@ -1,3 +1,4 @@
+using _4UgersProjekt.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -8,11 +9,11 @@ namespace _4UgersProjekt.Pages.Recipes
         [BindProperty]
         public Models.Recipes Recipes { get; set; }
 
-        private ICustomerService _customerService;
+        private IRecipeService _recipeService;
 
-        public CreateCustomerModel(ICustomerService customerService)
+        public CreateRecipeModel(IRecipeService recipeService)
         {
-            _customerService = customerService;
+            _recipeService = recipeService;
         }
         public IActionResult OnGet()
         {
@@ -26,9 +27,9 @@ namespace _4UgersProjekt.Pages.Recipes
                 return Page();
             }
 
-            _customerService.Add(Customer);
-            return RedirectToPage("GetAllCustomers");
+            _recipeService.Add(Recipes);
+            return RedirectToPage("GetAllRecipes");
         }
     }
 }
-}
+

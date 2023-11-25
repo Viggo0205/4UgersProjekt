@@ -1,7 +1,10 @@
+using _4UgersProjekt.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<IRecipeService,>
 
 var app = builder.Build();
 
