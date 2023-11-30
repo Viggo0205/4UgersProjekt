@@ -9,7 +9,7 @@ namespace _4UgersProjekt.Models
         {
         }
 
-        public Recipes(int id, string name, List<string> ingredients) 
+        public Recipes(int id, string name, List<RecipeComponent> ingredients) 
         {
             Id = id;
             Name = name;
@@ -27,7 +27,12 @@ namespace _4UgersProjekt.Models
 
         [Display(Name = "Recipe engridients")]
         [Required(ErrorMessage = "Recipe engridients is needed")]
-        public List<string> Ingredients { get; set; }
+        public List<RecipeComponent> Ingredients { get; set; }
 
+        public int TotalCalories
+        {
+            get;
+            set;
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace _4UgersProjekt.Pages.Recipes
 
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid || Recipes.Ingredients.Count == 0)
             {
                 return Page();
             }
