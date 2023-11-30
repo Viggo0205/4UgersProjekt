@@ -31,8 +31,9 @@ namespace _4UgersProjekt.Models
 
         public int TotalCalories
         {
+            //TODO Sumering af totalCalories.
             get;
-            set;
+            
         }
     }
 }
