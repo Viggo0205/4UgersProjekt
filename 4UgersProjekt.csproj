@@ -7,8 +7,4 @@
     <RootNamespace>_4UgersProjekt</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
 </Project>

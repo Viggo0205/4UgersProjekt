@@ -2,7 +2,7 @@
 {
 	public class RecipeComponent
 	{
-		public Ingridient Engridient { get; set; }
+		public Ingridient Ingridient { get; set; }
 		public int Amount { get; set; }
 
 		public RecipeComponent() { }

@@ -7,7 +7,7 @@ namespace _4UgersProjekt.Services
         public RecipeService(IWebHostEnvironment webHostEnvironment):base(new JSonFileRecipeService(webHostEnvironment)) 
         { 
         }
-        public List<string> GetIngredients()
+        public List<RecipeComponent> GetIngredients()
         {
             Recipes recipes = new Recipes();
             return recipes.Ingredients; 
