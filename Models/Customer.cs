@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using _4UgersProjekt.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace _4UgersProjekt.Models
 {
-	public class Customer
+	public class Customer : IHaveIdAndName
 	{
 		public Customer() { }
 
