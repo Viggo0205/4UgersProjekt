@@ -27,7 +27,7 @@ namespace _4UgersProjekt.Models
 		public string Name { get; set; }
 		public string Email { get; set; }
 		public bool KundeKlub { get; set; }
-
+		public List<Recipes> Favorites { get; set; }
 
 	}
 }
