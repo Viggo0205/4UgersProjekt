@@ -3,7 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace _4UgersProjekt.Models
 {
-    public class Recipes : IHaveIdAndName
+	public enum MealType
+	{
+		Breakfast, 
+        Lunch,
+        Dinner,
+        Snack
+	}
+
+	public class Recipes : IHaveIdAndName
     {
         public Recipes()
         {

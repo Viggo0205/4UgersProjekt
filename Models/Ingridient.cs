@@ -2,7 +2,7 @@
 {
 	public class Ingridient
 	{
-		public enum IngridientType
+		public enum IngredientType
 		{
 			Meat,
 			Vegetables,
@@ -12,7 +12,7 @@
 
 		public Ingridient() { }
 
-		public Ingridient(IngridientType engridientType, string name, int fatPct, int carbPct, int protPct, int calories)
+		public Ingridient(IngredientType engridientType, string name, int fatPct, int carbPct, int protPct, int calories)
 		{
 			Name = name;
 			FatPct = fatPct;
@@ -38,7 +38,7 @@
 			get;
 		}
 
-		public IngridientType EngridientType
+		public IngredientType IngredientT
 		{
 			get;
 		}
