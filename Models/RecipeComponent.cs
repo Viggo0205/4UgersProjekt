@@ -6,5 +6,11 @@
 		public int Amount { get; set; }
 
 		public RecipeComponent() { }
+
+		public RecipeComponent(Ingridient ingridient,int amount) 
+		{ 
+			Ingridient = ingridient;
+			Amount = amount;
+		}
 	}
 }
