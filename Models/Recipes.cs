@@ -43,7 +43,7 @@ namespace _4UgersProjekt.Models
             get 
             {
 				int totalCalories = 0;
-                if(Ingredients.Count>0)
+                if(Ingredients!=null && Ingredients.Count>0)
                 {
 					for (int i = 0; i < Ingredients.Count; i++)
 					{

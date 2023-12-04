@@ -17,7 +17,7 @@ namespace _4UgersProjekt.Pages.Recipes
         {
             _recipeService = recipeService;
             Ingredients = ingredientService.Get();
-
+            Amount = new List<int>();
             for(int i = 0; i<Ingredients.Count; i++)
             {
                 Amount.Add(0);
