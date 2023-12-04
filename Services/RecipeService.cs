@@ -6,11 +6,12 @@ namespace _4UgersProjekt.Services
     {
         public RecipeService(IWebHostEnvironment webHostEnvironment):base(new JSonFileRecipeService(webHostEnvironment)) 
         { 
+            
         }
         public List<RecipeComponent> GetIngredients()
         {
-            Recipes recipes = new Recipes();
-            return recipes.Ingredients; 
+			Recipes recipes = new Recipes();
+			return recipes.Ingredients; 
         }
 
         public override void Update(Recipes item)

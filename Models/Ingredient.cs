@@ -1,6 +1,9 @@
-﻿namespace _4UgersProjekt.Models
+﻿using _4UgersProjekt.Services;
+using System.ComponentModel.DataAnnotations;
+
+namespace _4UgersProjekt.Models
 {
-	public class Ingridient
+	public class Ingredient : IHaveIdAndName
 	{
 		public enum IngredientType
 		{
@@ -10,20 +13,22 @@
 			Spices
 		}
 
-		public Ingridient() { }
+		public Ingredient() { }
 
-		public Ingridient(IngredientType engridientType, string name, int fatPct, int carbPct, int protPct, int calories)
+		public Ingredient(int id,IngredientType engridientType, string name, int fatPct, int carbPct, int protPct, int calories)
 		{
+			Id = id;
 			Name = name;
 			FatPct = fatPct;
 			CarbPct = carbPct;
 			ProtPct = protPct;
 			Calories = calories;
 		}
+		public int Id { get;}
 
 		public string Name
 		{
-			get;
+			get; set;
 		}
 		public int FatPct
 		{

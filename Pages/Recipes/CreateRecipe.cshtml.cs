@@ -8,7 +8,7 @@ namespace _4UgersProjekt.Pages.Recipes
     public class CreateRecipeModel : PageModel
     {
        
-        public List<Ingridient> Ingridients { get;}
+        public List<Ingredient> Ingridients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
         private IRecipeService _recipeService;
