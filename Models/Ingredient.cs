@@ -24,7 +24,7 @@ namespace _4UgersProjekt.Models
 			ProtPct = protPct;
 			Calories = calories;
 		}
-		public int Id { get;}
+		public int Id { get; set; }
 
 		public string Name
 		{
@@ -50,7 +50,7 @@ namespace _4UgersProjekt.Models
 
 		public int Calories
 		{
-			get;
+			get; set;
 		}
 	}
 }

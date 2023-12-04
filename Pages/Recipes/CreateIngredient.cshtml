@@ -1,0 +1,27 @@
+﻿@page
+@model _4UgersProjekt.Pages.Recipes.CreateIngredientModel
+@{
+}
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Ingredient.Id" class="control-label"></label>
+        <input asp-for="Ingredient.Id" class="form-control"/>
+        <span asp-validation-for="Ingredient.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Ingredient.Name" class="control-label"></label>
+        <input asp-for="Ingredient.Name" class="form-control" />
+        <span asp-validation-for="Ingredient.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Ingredient.Calories" class="control-label"></label>
+        <input asp-for="Ingredient.Calories" class="form-control" />
+        <span asp-validation-for="Ingredient.Calories" class="text-danger"></span>
+    </div>
+    
+    <p>
+        <div class="form-group">
+    <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </p>
+</form>

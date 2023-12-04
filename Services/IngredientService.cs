@@ -1,10 +1,11 @@
 ﻿using _4UgersProjekt.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace _4UgersProjekt.Services
 {
-	public class IngredientService : DataRepository<Ingredient>, IIngredient
+	public class IngredientService : DataRepository<Ingredient>, IIngredientService
 	{
-		public IngredientService(JsonFileService<Ingredient> jsonFile) : base(jsonFile)
+		public IngredientService(IWebHostEnvironment webHostEnvironment) : base(new JSonFileIngredientService(webHostEnvironment))
 		{
 		}
 
