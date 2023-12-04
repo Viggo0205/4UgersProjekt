@@ -15,14 +15,15 @@ namespace _4UgersProjekt.Models
     {
         public Recipes()
         {
+            Ingredients = new List<RecipeComponent>();
         }
 
-        public Recipes(int id, string name, List<RecipeComponent> ingredients)
+        public Recipes(int id, string name)
         {
             Id = id;
             Name = name;
-            Ingredients = ingredients;
-        }
+            Ingredients = new List<RecipeComponent>();
+		}
 
         [Display(Name = "Recipe ID")]
         [Required(ErrorMessage = "Recipe ID is needed")]
@@ -47,7 +48,7 @@ namespace _4UgersProjekt.Models
                 {
 					for (int i = 0; i < Ingredients.Count; i++)
 					{
-						totalCalories += Ingredients[i].Ingridient.Calories;
+						totalCalories += Ingredients[i].Ingredient.Calories;
 					}
                     return totalCalories;
 				}

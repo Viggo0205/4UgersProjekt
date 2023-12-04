@@ -7,7 +7,10 @@ namespace _4UgersProjekt.Pages.Recipes
 {
     public class CreateRecipeModel : PageModel
     {
-       
+		[BindProperty]
+		public string Name { get; set; }
+		[BindProperty]
+		public int Id { get; set; }
         public List<Ingredient> Ingredients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
@@ -30,7 +33,7 @@ namespace _4UgersProjekt.Pages.Recipes
 
         public IActionResult OnPost()
         {
-            Models.Recipes _recipes = new Models.Recipes();
+            Models.Recipes _recipes = new Models.Recipes(Id,Name);
 
             for(int i = 0; i < Ingredients.Count; i++)
             {
