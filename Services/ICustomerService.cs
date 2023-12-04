@@ -6,7 +6,5 @@ namespace _4UgersProjekt.Services
 	{
 		string GetEmail();
 		bool GetKundeServiceStatus();
-		void AddFavorite();
-		void RemoveFavorite();
 	}
 }
