@@ -15,8 +15,8 @@ namespace _4UgersProjekt.Services
 
         public DataRepository(JsonFileService<T> jsonFile)
         {
-            _data = new List<T>();
             _jsonFile = jsonFile;
+            _data = _jsonFile.GetJsonItems().ToList();
         }
 
 

@@ -44,7 +44,11 @@
 								asp-page="DeleteItem" asp-route-id="@item.Id">Delete</a>
 							</td>
 								<td>
-						@item.Ingredients
+						@for(int i = 0; i < item.Ingredients.Count; i++)
+						{
+							@item.Ingredients[i]
+						}
+						
 							</td>
 							<td>
 							

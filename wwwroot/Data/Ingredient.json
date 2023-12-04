@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Name": "tobias",
+    "FatPct": 0,
+    "CarbPct": 0,
+    "ProtPct": 0,
+    "IngredientT": 0,
+    "Calories": 40000000
+  },
+  {
+    "Id": 31,
+    "Name": "jonas",
+    "FatPct": 0,
+    "CarbPct": 0,
+    "ProtPct": 0,
+    "IngredientT": 0,
+    "Calories": 400000
+  }
+]

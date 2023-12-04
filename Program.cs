@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<IRecipeService,RecipeService>();
+builder.Services.AddSingleton<IIngredientService,IngredientService>();
 
 builder.Services.AddTransient<JSonFileRecipeService>();
 var app = builder.Build();

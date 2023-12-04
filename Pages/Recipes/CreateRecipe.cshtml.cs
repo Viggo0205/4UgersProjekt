@@ -7,17 +7,21 @@ namespace _4UgersProjekt.Pages.Recipes
 {
     public class CreateRecipeModel : PageModel
     {
-       
-        public List<Ingredient> Ingridients { get;}
+		[BindProperty]
+		public string Name { get; set; }
+		[BindProperty]
+		public int Id { get; set; }
+        public List<Ingredient> Ingredients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
         private IRecipeService _recipeService;
 
-        public CreateRecipeModel(IRecipeService recipeService)
+        public CreateRecipeModel(IRecipeService recipeService, IIngredientService ingredientService)
         {
             _recipeService = recipeService;
-
-            for(int i = 0; i<Ingridients.Count; i++)
+            Ingredients = ingredientService.Get();
+            Amount = new List<int>();
+            for(int i = 0; i<Ingredients.Count; i++)
             {
                 Amount.Add(0);
             }
@@ -29,13 +33,13 @@ namespace _4UgersProjekt.Pages.Recipes
 
         public IActionResult OnPost()
         {
-            Models.Recipes _recipes = new Models.Recipes();
+            Models.Recipes _recipes = new Models.Recipes(Id,Name);
 
-            for(int i = 0; i < Ingridients.Count; i++)
+            for(int i = 0; i < Ingredients.Count; i++)
             {
                 if (Amount[i] > 0)
                 {
-                    _recipes.Ingredients.Add(new RecipeComponent(Ingridients[i], Amount[i]));
+                    _recipes.Ingredients.Add(new RecipeComponent(Ingredients[i], Amount[i]));
                 }
             }
 
