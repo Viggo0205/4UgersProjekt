@@ -11,13 +11,13 @@ namespace _4UgersProjekt.Models
         Snack
 	}
 
-	public class Recipes : IHaveIdAndName
+    public class Recipes : IHaveIdAndName
     {
         public Recipes()
         {
         }
 
-        public Recipes(int id, string name, List<RecipeComponent> ingredients) 
+        public Recipes(int id, string name, List<RecipeComponent> ingredients)
         {
             Id = id;
             Name = name;
@@ -27,7 +27,7 @@ namespace _4UgersProjekt.Models
         [Display(Name = "Recipe ID")]
         [Required(ErrorMessage = "Recipe ID is needed")]
         [Range(typeof(int), "0", "10000", ErrorMessage = "ID skal være mellem {1} og {2}")]
-        public int Id {get; set;}
+        public int Id { get; set; }
 
         [Display(Name = "Recipe name")]
         [Required(ErrorMessage = "Recipe name is needed")]
@@ -39,9 +39,18 @@ namespace _4UgersProjekt.Models
 
         public int TotalCalories
         {
-            //TODO Sumering af totalCalories.
-            get;
             
+            get 
+            {
+				int totalCalories = 0;
+
+                for(int i = 0; i< Ingredients.Count; i++)
+                {
+                    totalCalories += Ingredients[i].Ingridient.Calories;
+                }
+
+                return totalCalories;
+            }
         }
     }
 }
