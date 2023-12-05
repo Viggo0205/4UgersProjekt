@@ -1,8 +1,8 @@
 ﻿@page
-@model _4UgersProjekt.Pages.Recipes.GetAllIngredientsModel
+@model _4UgersProjekt.Pages.Recipes.GetAllCustomersModel
 @{
 }
-<h1>Ingredients</h1>
+<h1>Customers</h1>
 <form method="post">
 	<div class="input-group mb-3">
 		<input asp-for="SearchString" class="form-control mr-1" 
@@ -21,13 +21,14 @@
 			<th>
 		Name
 	</th>
+	
 
 		</tr>
 	</thead>
 	<tbody>
-		@if (Model.Ingredients != null)
+		@if (Model.Customer != null)
 		{
-			foreach (var item in Model.Ingredients)
+			foreach (var item in Model.Customer)
 			{
 								<tr>
 									<td>
@@ -42,8 +43,8 @@
 										<a class="btn btn-danger btn-sm " type="button" title="Delete" 
 										asp-page="DeleteItem" asp-route-id="@item.Id">Delete</a>
 									</td>
-										<td>
-						@item.Calories
+									<td>
+						@item.Email
 									</td>
 									<td>
 
