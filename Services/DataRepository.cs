@@ -37,7 +37,7 @@ namespace _4UgersProjekt.Services
                 if (string.IsNullOrEmpty(str) || t.Name.ToLower().Contains(str.ToLower()))
                 {
                     nameSearch.Add(t);
-                }
+                }               
             }
 
             return nameSearch;

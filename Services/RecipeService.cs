@@ -4,7 +4,8 @@ namespace _4UgersProjekt.Services
 {
     public class RecipeService : DataRepository<Recipe>, IRecipeService
     {
-        public RecipeService(IWebHostEnvironment webHostEnvironment):base(new JSonFileRecipeService(webHostEnvironment)) 
+		Recipe _recipes = new Recipe();
+		public RecipeService(IWebHostEnvironment webHostEnvironment):base(new JSonFileRecipeService(webHostEnvironment)) 
         { 
             
         }
@@ -14,7 +15,27 @@ namespace _4UgersProjekt.Services
 			return recipes.Ingredients; 
         }
 
-        public override void Update(Recipe item)
+		public IEnumerable<Recipe> CalorieFilter(int maxCalories, int minCalories = 0)
+		{
+			List<Recipe> filterList = new List<Recipe>();
+			foreach (Recipe item in _data)
+			{
+    
+				
+				if ((minCalories == 0 && item.TotalCalories <= maxCalories) ||
+					(maxCalories == 0 && item.TotalCalories >= minCalories) ||
+					(item.TotalCalories >= minCalories && item.TotalCalories <= maxCalories))
+				{
+                    Console.WriteLine("Cool Stuff");
+					filterList.Add(item);
+                    
+				}
+			}
+
+			return filterList;
+		}
+
+		public override void Update(Recipe item)
         {
             if(item != null)
             {
@@ -28,5 +49,6 @@ namespace _4UgersProjekt.Services
                 _jsonFile.SaveJson(_data);
             }
         }
-    }
+
+	}
 }

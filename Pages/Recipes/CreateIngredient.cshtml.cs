@@ -29,6 +29,7 @@ namespace _4UgersProjekt.Pages.Recipes
 			}
 
 			_ingredientService.Add(Ingredient);
+			Console.WriteLine("Cunt");
 			return RedirectToPage("GetAllIngredients");
 		}
 	}

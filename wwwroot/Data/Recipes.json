@@ -60,5 +60,24 @@
       }
     ],
     "TotalCalories": 40400000
+  },
+  {
+    "Id": 12,
+    "Name": "Mattis mad",
+    "Ingredients": [
+      {
+        "Ingredient": {
+          "Id": 12,
+          "Name": "Matti",
+          "FatPct": 0,
+          "CarbPct": 0,
+          "ProtPct": 0,
+          "IngredientT": 0,
+          "Calories": 30
+        },
+        "Amount": 1
+      }
+    ],
+    "TotalCalories": 30
   }
 ]

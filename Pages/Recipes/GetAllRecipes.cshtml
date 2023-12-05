@@ -12,6 +12,20 @@
 			   value="Search" class="btn btn-primary" />
 	</div>
 </form>
+<form method="post">
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text">Min</span>
+		</div>
+		<input asp-for="MinCalories" class="form-control mr-1"/>
+		<div class="input-group-prepend">
+			<span class="input-group-text">Max</span>
+		</div>
+		<input asp-for="MaxCalories" class="form-control mr-1"/>
+		<input type="submit" asp-page-handler="CalorieFilter" 
+			   value="Filter" class="btn btn-primary" />
+	</div>
+</form>
 
 <table class="table table-bordered table-hover table-striped">
 	<thead>

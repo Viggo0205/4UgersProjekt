@@ -16,5 +16,23 @@
     "ProtPct": 0,
     "IngredientT": 0,
     "Calories": 400000
+  },
+  {
+    "Id": 12,
+    "Name": "Matti",
+    "FatPct": 0,
+    "CarbPct": 0,
+    "ProtPct": 0,
+    "IngredientT": 0,
+    "Calories": 30
+  },
+  {
+    "Id": 40,
+    "Name": "Cunt",
+    "FatPct": 0,
+    "CarbPct": 0,
+    "ProtPct": 0,
+    "IngredientT": 0,
+    "Calories": 1234
   }
 ]
