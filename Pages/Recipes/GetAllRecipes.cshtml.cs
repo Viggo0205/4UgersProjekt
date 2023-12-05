@@ -6,7 +6,7 @@ namespace _4UgersProjekt.Pages.Recipes
 {
     public class GetAllRecipesModel : PageModel
     {
-        public List<Models.Recipes>? Recipes { get; private set; }
+        public List<Models.Recipe>? Recipes { get; private set; }
 
         [BindProperty]
         public string SearchString { get; set; }

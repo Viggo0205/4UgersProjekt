@@ -11,14 +11,14 @@ namespace _4UgersProjekt.Models
         Snack
 	}
 
-    public class Recipes : IHaveIdAndName
+    public class Recipe : IHaveIdAndName
     {
-        public Recipes()
+        public Recipe()
         {
             Ingredients = new List<RecipeComponent>();
         }
 
-        public Recipes(int id, string name)
+        public Recipe(int id, string name)
         {
             Id = id;
             Name = name;

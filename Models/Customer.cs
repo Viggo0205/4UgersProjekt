@@ -27,8 +27,8 @@ namespace _4UgersProjekt.Models
 		public string Name { get; set; }
 		public string Email { get; set; }
 		public bool KundeKlub { get; set; }
-		public List<Recipes> Favorites {get; set;}
-		public void AddFavorite(Recipes recipe)
+		public List<Recipe> Favorites {get; set;}
+		public void AddFavorite(Recipe recipe)
 		{
 			if (!Favorites.Contains(recipe))
 			{
@@ -39,7 +39,7 @@ namespace _4UgersProjekt.Models
 				throw new InvalidOperationException("You already have this as a favorite recipe");
 			}
 		}
-		public void RemoveFavorite(Recipes recipe)
+		public void RemoveFavorite(Recipe recipe)
 		{
 			if (Favorites.Contains(recipe))
 			{	

@@ -2,7 +2,7 @@
 
 namespace _4UgersProjekt.Services
 {
-    public class RecipeService : DataRepository<Recipes>, IRecipeService
+    public class RecipeService : DataRepository<Recipe>, IRecipeService
     {
         public RecipeService(IWebHostEnvironment webHostEnvironment):base(new JSonFileRecipeService(webHostEnvironment)) 
         { 
@@ -10,15 +10,15 @@ namespace _4UgersProjekt.Services
         }
         public List<RecipeComponent> GetIngredients()
         {
-			Recipes recipes = new Recipes();
+			Recipe recipes = new Recipe();
 			return recipes.Ingredients; 
         }
 
-        public override void Update(Recipes item)
+        public override void Update(Recipe item)
         {
             if(item != null)
             {
-                foreach(Recipes i in _data)
+                foreach(Recipe i in _data)
                 {
                     if(i.Id == item.Id)
                     {

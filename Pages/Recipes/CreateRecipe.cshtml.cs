@@ -33,7 +33,7 @@ namespace _4UgersProjekt.Pages.Recipes
 
         public IActionResult OnPost()
         {
-            Models.Recipes _recipes = new Models.Recipes(Id,Name);
+            Models.Recipe _recipes = new Models.Recipe(Id,Name);
 
             for(int i = 0; i < Ingredients.Count; i++)
             {

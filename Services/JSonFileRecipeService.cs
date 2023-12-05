@@ -2,7 +2,7 @@
 
 namespace _4UgersProjekt.Services
 {
-    public class JSonFileRecipeService : JsonFileService<Recipes>
+    public class JSonFileRecipeService : JsonFileService<Recipe>
     {
 
         public JSonFileRecipeService(IWebHostEnvironment webHostEnvironment) 

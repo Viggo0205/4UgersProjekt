@@ -15,7 +15,7 @@
 
 		public override string ToString()
 		{
-			return $"Name: {Ingredient?.Name}, Amount: {Amount}";
+			return $"Name: {Ingredient?.Name}, Amount: {Amount} ";
 		}
 	}
 }

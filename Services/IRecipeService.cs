@@ -2,7 +2,7 @@
 
 namespace _4UgersProjekt.Services
 {
-    public interface IRecipeService:IService<Recipes>
+    public interface IRecipeService:IService<Recipe>
     {
         List<RecipeComponent> GetIngredients();
     }
