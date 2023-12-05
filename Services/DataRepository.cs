@@ -34,7 +34,7 @@ namespace _4UgersProjekt.Services
             List<T> nameSearch = new List<T>();
             foreach (T t in _data)
             {
-                if (string.IsNullOrEmpty(str) || t.Name.ToLower().Contains(str.ToLower()))
+                if (string.IsNullOrEmpty(str) || (t.Name != null && t.Name.ToLower().Contains(str.ToLower())))
                 {
                     nameSearch.Add(t);
                 }
