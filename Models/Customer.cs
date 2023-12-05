@@ -45,6 +45,10 @@ namespace _4UgersProjekt.Models
 			{	
 				Favorites.Remove(recipe);
 			}
+			else
+			{
+				throw new InvalidOperationException("This recipe does not exist");
+			}
 		}
 
 	}
