@@ -30,8 +30,6 @@ namespace _4UgersProjekt.Models
         [Display(Name = "Kundeklub")]
         public bool KundeKlub { get; set; }
 
-        public List<Recipe> Favorites { get; set; }
-
-
+        public List<Recipe> Favorites { get; set; } = new List<Recipe>();
     }
 }

@@ -41,6 +41,25 @@ namespace _4UgersProjekt.Services
                 _jsonFile.SaveJson(_data);
             }
         }
+        public void AddFavoriteRecipe(int customerId, Recipe recipe)
+        {
+            var customer = Get(customerId);
+            if (customer != null)
+            {
+                customer.Favorites.Add(recipe);
+                Update(customer);
+            }
+        }
 
+        public void RemoveFavoriteRecipe(int customerId, Recipe recipe)
+        {
+            var customer = Get(customerId);
+            if (customer != null)
+            {
+                customer.Favorites.Remove(recipe);
+                Update(customer);
+            }
+        }
     }
+
 }
