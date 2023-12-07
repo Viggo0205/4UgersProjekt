@@ -11,7 +11,9 @@ namespace _4UgersProjekt.Pages.Recipes
 		public string Name { get; set; }
 		[BindProperty]
 		public int Id { get; set; }
-        public List<Ingredient> Ingredients { get;}
+		[BindProperty]
+		public GoalType ChosenGoalType { get; set; }
+		public List<Ingredient> Ingredients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
         private IRecipeService _recipeService;

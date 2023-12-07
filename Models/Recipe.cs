@@ -10,7 +10,12 @@ namespace _4UgersProjekt.Models
         Dinner,
         Snack
 	}
-
+    public enum GoalType
+    {
+     Bulk,
+     Cut,
+     Maintance
+    }
     public class Recipe : IHaveIdAndName
     {
         public Recipe()
