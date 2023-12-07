@@ -23,6 +23,17 @@
         <input asp-for="Customer.KundeKlub" class="form-check-input" />
         <span asp-validation-for="Customer.KundeKlub" class="text-danger"></span>
     </div>
+    <h2>Manage Favorite Recipes</h2>
+    <div class="form-group">
+        <label>Select favorite recipes:</label>
+        @for (int index = 0; index < Model.Recipes.Count; index++)
+        {
+            <div class="form-check">
+                <input type="checkbox" asp-for="@Model.Favories[index]" class="form-check-input" />
+                <label class="form-check-label">@Model.Recipes[index].Name</label>
+            </div>
+        }
+    </div>
     <p>
         <div class="form-group">
             <input type="submit" value="Create" class="btn btn-primary" />

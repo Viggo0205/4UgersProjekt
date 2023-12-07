@@ -10,19 +10,36 @@ namespace _4UgersProjekt.Pages.Recipes
 		[BindProperty]
 		public Customer Customer { get; set; }
 
-		private ICustomerService _customerService;
+        public List<Recipe> Recipes { get; set; }   = new List<Recipe>();
 
-		public CreateCustomerModel(ICustomerService customerService)
+        [BindProperty]
+        public List<bool> Favories { get; set; } = new List<bool>();
+
+		private ICustomerService _customerService;
+        private IRecipeService _recipeService;
+
+		public CreateCustomerModel(ICustomerService customerService, IRecipeService recipeService)
 		{
 			_customerService = customerService;
+            _recipeService = recipeService;
 		}
 		public IActionResult OnGet()
 		{
+            Recipes = _recipeService.Get();
+
+            Favories = new List<bool>();
+            for (int i = 0; i < Recipes.Count; i++)
+            {
+                Favories.Add(false);
+            }
+
 			return Page();
 		}
 
         public IActionResult OnPost()
         {
+            Recipes = _recipeService.Get();
+
             Console.WriteLine("OnPost method called in CreateCustomerModel");
 
             if (!ModelState.IsValid)
@@ -35,6 +52,14 @@ namespace _4UgersProjekt.Pages.Recipes
                     }
                 }
                 return Page();
+            }
+
+            for (int index = 0; index < Recipes.Count; index++)
+            {
+                if (Favories[index])
+                {
+                    Customer.Favorites.Add(Recipes[index]);
+                }
             }
 
             _customerService.SetCurrentCustomer(Customer);
