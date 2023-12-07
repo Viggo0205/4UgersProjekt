@@ -28,28 +28,5 @@ namespace _4UgersProjekt.Models
 		public string Email { get; set; }
 		public bool KundeKlub { get; set; }
 		public List<Recipe> Favorites {get; set;}
-		public void AddFavorite(Recipe recipe)
-		{
-			if (!Favorites.Contains(recipe))
-			{
-				Favorites.Add(recipe);
-			}
-			else
-			{
-				throw new InvalidOperationException("You already have this as a favorite recipe");
-			}
-		}
-		public void RemoveFavorite(Recipe recipe)
-		{
-			if (Favorites.Contains(recipe))
-			{	
-				Favorites.Remove(recipe);
-			}
-			else
-			{
-				throw new InvalidOperationException("This recipe does not exist");
-			}
-		}
-
 	}
 }
