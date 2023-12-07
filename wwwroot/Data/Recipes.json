@@ -63,6 +63,44 @@
   },
   {
     "Id": 12,
+    "Name": "shut up",
+    "Ingredients": [
+      {
+        "Ingredient": {
+          "Id": 1,
+          "Name": "tobias",
+          "FatPct": 0,
+          "CarbPct": 0,
+          "ProtPct": 0,
+          "IngredientT": 0,
+          "Calories": 40000000
+        },
+        "Amount": 2
+      }
+    ],
+    "TotalCalories": 40000000
+  },
+  {
+    "Id": 13,
+    "Name": "shut up 2",
+    "Ingredients": [
+      {
+        "Ingredient": {
+          "Id": 31,
+          "Name": "jonas",
+          "FatPct": 0,
+          "CarbPct": 0,
+          "ProtPct": 0,
+          "IngredientT": 0,
+          "Calories": 400000
+        },
+        "Amount": 12
+      }
+    ],
+    "TotalCalories": 400000
+  },
+  {
+    "Id": 12,
     "Name": "Mattis mad",
     "Ingredients": [
       {

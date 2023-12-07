@@ -2,10 +2,13 @@
 
 namespace _4UgersProjekt.Services
 {
-    public interface IRecipeService:IService<Recipe>
+    public interface IRecipeService : IService<Recipe>
     {
         List<RecipeComponent> GetIngredients();
 		IEnumerable<Recipe> CalorieFilter(int maxCalories, int minCalories = 0);
 
+	}
+        List<Recipe> SearchByIngredientName(string ingredientName);
+		
 	}
 }
