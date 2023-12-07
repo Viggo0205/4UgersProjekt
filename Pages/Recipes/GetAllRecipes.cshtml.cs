@@ -65,7 +65,6 @@ namespace _4UgersProjekt.Pages.Recipes
 			Recipes = _recipeService.CalorieFilter(MaxCalories, MinCalories).ToList();
 			return Page();
 		}
-        public void OnGet()
 
 		public void OnGet()
         {

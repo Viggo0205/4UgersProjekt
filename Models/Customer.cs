@@ -35,11 +35,3 @@ namespace _4UgersProjekt.Models
 
     }
 }
-		[Display(Name = "Customer name")]
-		[Required(ErrorMessage = "Customer name is needed")]
-		public string Name { get; set; }
-		public string Email { get; set; }
-		public bool KundeKlub { get; set; }
-		public List<Recipe> Favorites {get; set;}
-	}
-}
