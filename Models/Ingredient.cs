@@ -15,7 +15,7 @@ namespace _4UgersProjekt.Models
 
 		public Ingredient() { }
 
-		public Ingredient(int id,IngredientType engridientType, string name, int fatPct, int carbPct, int protPct, int calories)
+		public Ingredient(int id,IngredientType IngridientType, string name, int fatPct, int carbPct, int protPct, int calories)
 		{
 			Id = id;
 			Name = name;
@@ -32,20 +32,20 @@ namespace _4UgersProjekt.Models
 		}
 		public int FatPct
 		{
-			get;
+			get; set;
 		}
 		public int CarbPct
 		{
-			get;
+			get; set;
 		}
 		public int ProtPct
 		{
-			get;
+			get; set;
 		}
 
 		public IngredientType IngredientT
 		{
-			get;
+			get; set;
 		}
 
 		public int Calories

@@ -6,9 +6,8 @@ namespace _4UgersProjekt.Services
     {
         List<RecipeComponent> GetIngredients();
 		IEnumerable<Recipe> CalorieFilter(int maxCalories, int minCalories = 0);
-
-	}
         List<Recipe> SearchByIngredientName(string ingredientName);
-		
-	}
+
+    }      
 }
+

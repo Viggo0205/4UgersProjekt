@@ -34,5 +34,14 @@
     "ProtPct": 0,
     "IngredientT": 0,
     "Calories": 1234
+  },
+  {
+    "Id": 31,
+    "Name": "Hakkek\u00F8d",
+    "FatPct": 7,
+    "CarbPct": 76,
+    "ProtPct": 7,
+    "IngredientT": 0,
+    "Calories": 500
   }
 ]
