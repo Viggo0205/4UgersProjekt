@@ -11,16 +11,16 @@ namespace _4UgersProjekt.Services
         public List<RecipeComponent> GetIngredients()
         {
 			Recipe recipes = new Recipe();
-			return recipes.Ingredients; 
+			return recipes.Ingredients;
         }
 
         public override void Update(Recipe item)
         {
-            if(item != null)
+            if (item != null)
             {
-                foreach(Recipe i in _data)
+                foreach (Recipe i in _data)
                 {
-                    if(i.Id == item.Id)
+                    if (i.Id == item.Id)
                     {
                         i.Name = item.Name;
                     }
@@ -28,5 +28,17 @@ namespace _4UgersProjekt.Services
                 _jsonFile.SaveJson(_data);
             }
         }
-    }
+		public List<Recipe> SearchByIngredientName(string ingredientName)
+		{
+			return _data
+		.Where(recipe =>
+			recipe.Ingredients.Any(component =>
+				component.Ingredient != null &&  
+				component.Ingredient.Name != null &&  
+				component.Ingredient.Name.ToLower().Contains(ingredientName?.ToLower() ?? "")
+			)
+		)
+		.ToList();
+		}
+	}
 }

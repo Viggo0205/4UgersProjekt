@@ -2,8 +2,10 @@
 
 namespace _4UgersProjekt.Services
 {
-    public interface IRecipeService:IService<Recipe>
+    public interface IRecipeService : IService<Recipe>
     {
         List<RecipeComponent> GetIngredients();
-    }
+        List<Recipe> SearchByIngredientName(string ingredientName);
+		
+	}
 }
