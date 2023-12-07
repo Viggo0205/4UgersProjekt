@@ -9,6 +9,6 @@ namespace _4UgersProjekt.Services
         List<Recipe> SearchByIngredientName(string ingredientName);
 
     }      
-    }
 }
+
 
