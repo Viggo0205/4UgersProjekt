@@ -21,15 +21,27 @@ namespace _4UgersProjekt.Pages.Recipes
 			return Page();
 		}
 
-		public IActionResult OnPost()
-		{
-			if (!ModelState.IsValid)
-			{
-				return Page();
-			}
+        public IActionResult OnPost()
+        {
+            Console.WriteLine("OnPost method called in CreateCustomerModel");
 
-			_customerService.Add(Customer);
-			return RedirectToPage("GetAllCustomers");
-		}
-	}
+            if (!ModelState.IsValid)
+            {
+                foreach (var modelState in ModelState.Values)
+                {
+                    foreach (var error in modelState.Errors)
+                    {
+                        Console.WriteLine($"Model error: {error.ErrorMessage}");
+                    }
+                }
+                return Page();
+            }
+
+            _customerService.SetCurrentCustomer(Customer);
+            _customerService.Add(Customer);
+
+            Console.WriteLine("Before redirecting to GetAllCustomers");
+            return RedirectToPage("/Recipes/GetAllCustomers");
+        }
+    }
 }
