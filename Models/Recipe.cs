@@ -10,7 +10,12 @@ namespace _4UgersProjekt.Models
         Dinner,
         Snack
 	}
-
+    public enum GoalType
+    {
+     Bulk,
+     Cut,
+     Maintance
+    }
     public class Recipe : IHaveIdAndName
     {
         public Recipe()
@@ -25,6 +30,7 @@ namespace _4UgersProjekt.Models
             Ingredients = new List<RecipeComponent>();
 		}
 
+
         [Display(Name = "Recipe ID")]
         [Required(ErrorMessage = "Recipe ID is needed")]
         [Range(typeof(int), "0", "10000", ErrorMessage = "ID skal være mellem {1} og {2}")]
@@ -32,7 +38,9 @@ namespace _4UgersProjekt.Models
 
         [Display(Name = "Recipe name")]
         [Required(ErrorMessage = "Recipe name is needed")]
-        public string Name { get; set; }
+		public GoalType GoalT { get; set; }
+
+		public string Name { get; set; }
 
         [Display(Name = "Recipe engridients")]
         [Required(ErrorMessage = "Recipe engridients is needed")]

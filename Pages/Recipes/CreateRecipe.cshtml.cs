@@ -11,7 +11,13 @@ namespace _4UgersProjekt.Pages.Recipes
 		public string Name { get; set; }
 		[BindProperty]
 		public int Id { get; set; }
-        public List<Ingredient> Ingredients { get;}
+
+		[BindProperty]
+		public Recipe Recipe { get; set; }
+
+		[BindProperty]
+		public GoalType ChosenGoalType { get; set; }
+		public List<Ingredient> Ingredients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
         private IRecipeService _recipeService;
@@ -35,7 +41,9 @@ namespace _4UgersProjekt.Pages.Recipes
         {
             Models.Recipe _recipes = new Models.Recipe(Id,Name);
 
-            for(int i = 0; i < Ingredients.Count; i++)
+			_recipes.GoalT = ChosenGoalType;
+
+			for (int i = 0; i < Ingredients.Count; i++)
             {
                 if (Amount[i] > 0)
                 {
