@@ -1,43 +1,70 @@
-using _4UgersProjekt.Models;
-using _4UgersProjekt.Services;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using _4UgersProjekt.Models;
+using _4UgersProjekt.Services;
 
 namespace _4UgersProjekt.Pages.Recipes
 {
     public class EditRecipesModel : PageModel
-	{
-		private IRecipeService _repo;
+    {
+        private IRecipeService _repo;
 
-		public EditRecipesModel(IRecipeService repo)
-		{
-			_repo = repo;
-		}
+        public EditRecipesModel(IRecipeService repo, IIngredientService ingredientService)
+        {
+            _repo = repo;
+            Ingredients = ingredientService.Get();
+            Amount = new List<int>();
+            for (int i = 0; i < Ingredients.Count; i++)
+            {
+                Amount.Add(0);
+            }
+        }
 
-		[BindProperty]
-		public Models.Recipe Recipe { get; set; }
+        [BindProperty]
+        public string Name { get; set; }
+        [BindProperty]
+        public int Id { get; set; }
+        [BindProperty]
+        public Models.Recipe Recipe { get; set; }
+        public List<Ingredient> Ingredients { get; }
+        [BindProperty]
+        public List<int> Amount { get; }
 
-		public IActionResult OnGet(int id)
-		{
-			Models.Recipe? recipe = _repo.Get(id);
+        public IActionResult OnGet(int id)
+        {
+            Models.Recipe? recipe = _repo.Get(id);
 
-			if (recipe != null)
-				Recipe = recipe;
-			else
-				return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
+            if (recipe != null)
+                Recipe = recipe;
+            else
+                return RedirectToPage("/NotFound");
 
-			return Page();
-		}
+            return Page();
+        }
 
-		public IActionResult OnPost()
-		{
-			if (!ModelState.IsValid)
-			{
-				return Page();
-			}
+        public IActionResult OnPost()
+        {
+            Models.Recipe updatedRecipe = new Models.Recipe
+            {
+                Id = Id,
+                Name = Name
+            };
 
-			_repo.Update(Recipe);
-			return RedirectToPage("GetAllRecipes");
-		}
-	}
+            for (int i = 0; i < Ingredients.Count; i++)
+            {
+                if (Amount[i] > 0)
+                {
+                    updatedRecipe.Ingredients.Add(new RecipeComponent
+                    {
+                        Ingredient = Ingredients[i],
+                        Amount = Amount[i]
+                    });
+                }
+            }
+
+            _repo.Update(updatedRecipe);
+            return RedirectToPage("GetAllRecipes");
+        }
+    }
 }

@@ -1,7 +1,7 @@
 [
   {
     "Id": 0,
-    "Name": "mm",
+    "Name": null,
     "Ingredients": [
       {
         "Ingredient": {
@@ -13,7 +13,7 @@
           "IngredientT": 0,
           "Calories": 40000000
         },
-        "Amount": 2
+        "Amount": 999
       },
       {
         "Ingredient": {
@@ -26,9 +26,21 @@
           "Calories": 400000
         },
         "Amount": 2
+      },
+      {
+        "Ingredient": {
+          "Id": 12,
+          "Name": "Matti",
+          "FatPct": 0,
+          "CarbPct": 0,
+          "ProtPct": 0,
+          "IngredientT": 0,
+          "Calories": 30
+        },
+        "Amount": 1
       }
     ],
-    "TotalCalories": 40400000
+    "TotalCalories": 40400030
   },
   {
     "Id": 10,
@@ -117,5 +129,36 @@
       }
     ],
     "TotalCalories": 30
+  },
+  {
+    "Id": 6,
+    "Name": null,
+    "Ingredients": [
+      {
+        "Ingredient": {
+          "Id": 1,
+          "Name": "tobias",
+          "FatPct": 0,
+          "CarbPct": 0,
+          "ProtPct": 0,
+          "IngredientT": 0,
+          "Calories": 40000000
+        },
+        "Amount": 5
+      },
+      {
+        "Ingredient": {
+          "Id": 12,
+          "Name": "Matti",
+          "FatPct": 0,
+          "CarbPct": 0,
+          "ProtPct": 0,
+          "IngredientT": 0,
+          "Calories": 30
+        },
+        "Amount": 3
+      }
+    ],
+    "TotalCalories": 40000030
   }
 ]

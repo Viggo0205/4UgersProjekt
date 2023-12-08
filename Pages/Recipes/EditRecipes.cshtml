@@ -2,23 +2,53 @@
 @model _4UgersProjekt.Pages.Recipes.EditRecipesModel
 @{
 }
+
 <form method="post">
-	<div class="form-group">
-		<label asp-for="Recipe.Id" class="control-label"></label>
-		<input asp-for="Recipe.Id" class="form-control" readonly="@(true)" />
-	</div>
-	<div class="form-group">
-		<label asp-for="Recipe.Name" class="control-label"></label>
-		<input asp-for="Recipe.Name" class="form-control" />
-		<span asp-validation-for="Recipe.Name" class="text-danger"></span>
-	</div>
-	<p>
-		<div class="form-group">
-			<input type="submit" value="Update" class="btn btn-primary" />
-		</div>
-	</p>
+    <div class="form-group">
+        <label asp-for="Id" class="control-label"></label>
+        <input asp-for="Id" class="form-control" />
+        <span asp-validation-for="Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Ingredient
+                </th>
+                <th>
+                    Amount
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Ingredients != null)
+            {
+                for (int i = 0; i < Model.Ingredients.Count; i++)
+                {
+                    <tr class="btn-secondary">
+                        <td>
+                            @Model.Ingredients[i].Name
+                        </td>
+                        <td>
+                            <input asp-for="Amount[i]" class="form-control fs-4" />
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <p>
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary" />
+        </div>
+    </p>
 </form>
 
 <p>
-	<a asp-page="/Item/GetAllItems">Back to List</a>
+    <a asp-page="/Recipe/GetAllRecipes">Back to List</a>
 </p>

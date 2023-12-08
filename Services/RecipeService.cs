@@ -35,21 +35,35 @@ namespace _4UgersProjekt.Services
 			return filterList;
 		}
 
-		public override void Update(Recipe item)
+        public override void Update(Recipe updatedRecipe)
         {
-            if (item != null)
+            if (updatedRecipe != null)
             {
-                foreach (Recipe i in _data)
+                Recipe existingRecipe = _data.FirstOrDefault(r => r.Id == updatedRecipe.Id);
+
+                if (existingRecipe != null)
                 {
-                    if (i.Id == item.Id)
+                    existingRecipe.Name = updatedRecipe.Name;
+
+                    foreach (RecipeComponent updatedComponent in updatedRecipe.Ingredients)
                     {
-                        i.Name = item.Name;
+                        RecipeComponent existingComponent = existingRecipe.Ingredients.FirstOrDefault(ic => ic.Ingredient.Id == updatedComponent.Ingredient.Id);
+
+                        if (existingComponent != null)
+                        {
+                            existingComponent.Amount = updatedComponent.Amount;
+                        }
+                        else
+                        {
+                            existingRecipe.Ingredients.Add(updatedComponent);
+                        }
                     }
+
+                    _jsonFile.SaveJson(_data);
                 }
-                _jsonFile.SaveJson(_data);
             }
         }
-		public List<Recipe> SearchByIngredientName(string ingredientName)
+        public List<Recipe> SearchByIngredientName(string ingredientName)
 		{
 			return _data
 		.Where(recipe =>
