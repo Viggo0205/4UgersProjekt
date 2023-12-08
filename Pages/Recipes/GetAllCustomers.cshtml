@@ -47,6 +47,11 @@
 						@item.Email
 									</td>
 									<td>
+						@for(int i = 0; i < item.Favorites.Count; i++)
+						{
+							@item.Favorites[i].Name
+						}
+					</td>
 
 								</tr>
 			}

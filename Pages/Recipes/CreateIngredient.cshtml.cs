@@ -35,9 +35,9 @@ namespace _4UgersProjekt.Pages.Recipes
 			{
 				return Page();
 			}
-
+			Ingredient.IngredientT = ChosenIngredientType;
 			_ingredientService.Add(Ingredient);
-			Console.WriteLine("Cunt");
+			
 			return RedirectToPage("GetAllIngredients");
 		}
 	}

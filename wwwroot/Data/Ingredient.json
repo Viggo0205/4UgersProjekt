@@ -43,5 +43,23 @@
     "ProtPct": 7,
     "IngredientT": 0,
     "Calories": 500
+  },
+  {
+    "Id": 71,
+    "Name": "kage",
+    "FatPct": 40,
+    "CarbPct": 10,
+    "ProtPct": 30,
+    "IngredientT": 0,
+    "Calories": 9012390
+  },
+  {
+    "Id": 100,
+    "Name": "kagemad2",
+    "FatPct": 40,
+    "CarbPct": 20,
+    "ProtPct": 30,
+    "IngredientT": 1,
+    "Calories": 400000
   }
 ]
