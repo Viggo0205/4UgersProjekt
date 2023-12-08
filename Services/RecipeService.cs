@@ -15,6 +15,19 @@ namespace _4UgersProjekt.Services
 			return recipes.Ingredients;
         }
 
+		public IEnumerable<Recipe> GoalFilter(GoalType goalType)
+		{
+			List<Recipe> filterList = new List<Recipe>();
+			foreach (Recipe item in _data)
+			{
+
+				if ( item.GoalT == goalType) 
+				{ 
+					filterList.Add(item);
+				}
+			}
+			return filterList;
+		}
 		public IEnumerable<Recipe> CalorieFilter(int maxCalories, int minCalories = 0)
 		{
 			List<Recipe> filterList = new List<Recipe>();

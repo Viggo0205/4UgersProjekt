@@ -17,7 +17,8 @@ namespace _4UgersProjekt.Pages.Recipes
 		public int MaxCalories { get; set; }
 		[BindProperty]
 		public string SearchType { get; set; }
-
+		[BindProperty]
+		public  GoalType GoalType { get; set; }
 
 		private IRecipeService _recipeService;
 		private IIngredientService _ingredientService;
@@ -65,11 +66,15 @@ namespace _4UgersProjekt.Pages.Recipes
 			Recipes = _recipeService.CalorieFilter(MaxCalories, MinCalories).ToList();
 			return Page();
 		}
-        
+		public IActionResult OnPostGoalFilter()
+		{
+			Recipes = _recipeService.GoalFilter(GoalType).ToList();
+			return Page();
+		}
 
 		public void OnGet()
         {
             Recipes = _recipeService.Get();
         }
-    }
+	}
 }
