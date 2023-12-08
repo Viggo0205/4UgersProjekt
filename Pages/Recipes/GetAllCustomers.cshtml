@@ -36,12 +36,12 @@
 									</td>
 									<td>
 						@item.Name
-									</td>				
+									</td>
 									<td>
-										<a class="btn btn-primary btn-sm" type="button" title="Edit" 
-										asp-page="EditItem" asp-route-id="@item.Id">Edit</a>
-										<a class="btn btn-danger btn-sm " type="button" title="Delete" 
-										asp-page="DeleteItem" asp-route-id="@item.Id">Delete</a>
+										<a class="btn btn-primary btn-sm" type="button" title="Edit"
+										asp-page="EditCustomer" asp-route-id="@item.Id">Edit<i class="fa fa-edit"></i></a>
+										<a class="btn btn-danger btn-sm " type="button" title="Delete"
+										asp-page="DeleteCustomer" asp-route-id="@item.Id">Delete<i class="fa fa-trash"></i></a>
 									</td>
 									<td>
 						@item.Email
