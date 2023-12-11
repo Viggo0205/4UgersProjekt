@@ -1,4 +1,5 @@
-﻿using _4UgersProjekt.Services;
+﻿using _4UgersProjekt.Pages.Recipes;
+using _4UgersProjekt.Services;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -6,7 +7,16 @@ namespace _4UgersProjekt.Models
 {
     public class Customer : IHaveIdAndName
     {
-        public Customer() { }
+        public Customer()
+        {
+			MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Thursday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Friday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Saturday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
+		}
 
         public Customer(int id, string name, string email, bool kundeKlub)
         {
@@ -14,7 +24,17 @@ namespace _4UgersProjekt.Models
             Name = name;
             Email = email;
             KundeKlub = kundeKlub;
-        }
+
+			MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Thursday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Friday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Saturday] = new CreateCustomerModel.DailyMealPlan();
+			MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
+		}
+
+        public Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan> MealPlans { get; } = new Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan>();
 
         [Display(Name = "Customer ID")]
         [Required(ErrorMessage = "Customer ID is needed")]

@@ -1,5 +1,42 @@
 [
   {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
     "Id": 1321,
     "Name": "1231",
     "Email": "1231",
@@ -7,6 +44,43 @@
     "Favorites": []
   },
   {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
     "Id": 123,
     "Name": "123",
     "Email": "123",
@@ -14,6 +88,43 @@
     "Favorites": []
   },
   {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
     "Id": 974,
     "Name": "Per",
     "Email": "per@per.dk",
@@ -21,6 +132,43 @@
     "Favorites": []
   },
   {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
     "Id": 543,
     "Name": "ppp",
     "Email": "perrr@hotmail.com",
@@ -101,6 +249,43 @@
     ]
   },
   {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
     "Id": 0,
     "Name": "dig",
     "Email": "fff",
@@ -141,10 +326,320 @@
     ]
   },
   {
-    "Id": 123,
-    "Name": "Tobias",
-    "Email": "Tobiasschultz@gmail.com",
-    "KundeKlub": true,
-    "Favorites": []
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 666,
+    "Name": "ss",
+    "Email": "ss",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "Mattis mad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "Id": 12,
+              "Name": "Matti",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "IngredientT": 0,
+              "Calories": 30
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 30
+      },
+      {
+        "Id": 123,
+        "GoalT": 0,
+        "Name": "hanmse",
+        "Ingredients": [],
+        "TotalCalories": 0
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 777,
+    "Name": "qq",
+    "Email": "qq",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 23,
+        "GoalT": 0,
+        "Name": "hans",
+        "Ingredients": [],
+        "TotalCalories": 0
+      },
+      {
+        "Id": 3,
+        "GoalT": 0,
+        "Name": "sdf",
+        "Ingredients": [],
+        "TotalCalories": 0
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": {
+          "Id": 12,
+          "GoalT": 0,
+          "Name": "shut up",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "IngredientT": 0,
+                "Calories": 40000000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 40000000
+        },
+        "Noon": {
+          "Id": 50,
+          "GoalT": 0,
+          "Name": "abe",
+          "Ingredients": [],
+          "TotalCalories": 0
+        },
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": {
+          "Id": 13,
+          "GoalT": 0,
+          "Name": "shut up 2",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "IngredientT": 0,
+                "Calories": 400000
+              },
+              "Amount": 12
+            }
+          ],
+          "TotalCalories": 400000
+        },
+        "Evening": {
+          "Id": 50,
+          "GoalT": 0,
+          "Name": "abe",
+          "Ingredients": [],
+          "TotalCalories": 0
+        }
+      },
+      "Wedensday": {
+        "Morning": {
+          "Id": 13,
+          "GoalT": 0,
+          "Name": "shut up 2",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "IngredientT": 0,
+                "Calories": 400000
+              },
+              "Amount": 12
+            }
+          ],
+          "TotalCalories": 400000
+        },
+        "Noon": null,
+        "Evening": {
+          "Id": 123,
+          "GoalT": 0,
+          "Name": "hanmse",
+          "Ingredients": [],
+          "TotalCalories": 0
+        }
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": {
+          "Id": 12,
+          "GoalT": 0,
+          "Name": "shut up",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "IngredientT": 0,
+                "Calories": 40000000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 40000000
+        },
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": {
+          "Id": 123,
+          "GoalT": 0,
+          "Name": "hanmse",
+          "Ingredients": [],
+          "TotalCalories": 0
+        }
+      }
+    },
+    "Id": 888,
+    "Name": "nn",
+    "Email": "nn",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "Mattis mad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "Id": 12,
+              "Name": "Matti",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "IngredientT": 0,
+              "Calories": 30
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 30
+      },
+      {
+        "Id": 50,
+        "GoalT": 0,
+        "Name": "abe",
+        "Ingredients": [],
+        "TotalCalories": 0
+      },
+      {
+        "Id": 23,
+        "GoalT": 0,
+        "Name": "hans",
+        "Ingredients": [],
+        "TotalCalories": 0
+      },
+      {
+        "Id": 3,
+        "GoalT": 0,
+        "Name": "sdf",
+        "Ingredients": [],
+        "TotalCalories": 0
+      }
+    ]
   }
 ]

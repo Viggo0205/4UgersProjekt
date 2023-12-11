@@ -72,5 +72,10 @@ namespace _4UgersProjekt.Models
                 return totalCalories;
             }
         }
-    }
+
+		public override string ToString()
+		{
+			return Name;
+		}
+	}
 }
