@@ -1,211 +1,66 @@
 [
   {
-    "Id": 0,
-    "GoalT": 0,
-    "Name": null,
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "Id": 1,
-          "Name": "tobias",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 40000000
-        },
-        "Amount": 999
-      },
-      {
-        "Ingredient": {
-          "Id": 31,
-          "Name": "jonas",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 400000
-        },
-        "Amount": 2
-      },
-      {
-        "Ingredient": {
-          "Id": 12,
-          "Name": "Matti",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 30
-        },
-        "Amount": 1
-      }
-    ],
-    "TotalCalories": 40400030
+    "Id": 10,
+    "GoalT": 1,
+    "ToolT": 0,
+    "Name": "cookies",
+    "Ingredients": [],
+    "TotalCalories": 0
   },
   {
     "Id": 10,
-    "GoalT": 0,
-    "Name": "Kagemad",
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "Id": 1,
-          "Name": "tobias",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 40000000
-        },
-        "Amount": 4
-      },
-      {
-        "Ingredient": {
-          "Id": 31,
-          "Name": "jonas",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 400000
-        },
-        "Amount": 10
-      }
-    ],
-    "TotalCalories": 40400000
-  },
-  {
-    "Id": 12,
-    "GoalT": 0,
-    "Name": "shut up",
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "Id": 1,
-          "Name": "tobias",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 40000000
-        },
-        "Amount": 2
-      }
-    ],
-    "TotalCalories": 40000000
-  },
-  {
-    "Id": 13,
-    "GoalT": 0,
-    "Name": "shut up 2",
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "Id": 31,
-          "Name": "jonas",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 400000
-        },
-        "Amount": 12
-      }
-    ],
-    "TotalCalories": 400000
-  },
-  {
-    "Id": 12,
-    "GoalT": 0,
-    "Name": "Mattis mad",
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "Id": 12,
-          "Name": "Matti",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 30
-        },
-        "Amount": 1
-      }
-    ],
-    "TotalCalories": 30
-  },
-  {
-    "Id": 50,
-    "GoalT": 0,
-    "Name": "abe",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 23,
-    "GoalT": 0,
-    "Name": "hans",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 123,
-    "GoalT": 0,
-    "Name": "hanmse",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 3,
-    "GoalT": 0,
-    "Name": "sdf",
+    "GoalT": 1,
+    "ToolT": 0,
+    "Name": "Tobias sc",
     "Ingredients": [],
     "TotalCalories": 0
   },
   {
     "Id": 4,
     "GoalT": 1,
-    "Name": "ere",
+    "ToolT": 0,
+    "Name": "tobiass",
     "Ingredients": [],
     "TotalCalories": 0
   },
   {
-    "Id": 112,
-    "GoalT": 1,
-    "Name": "werwer",
+    "Id": 12312,
+    "GoalT": 0,
+    "ToolT": 0,
+    "Name": "qwewqe",
     "Ingredients": [],
     "TotalCalories": 0
   },
   {
-    "Id": 6,
-    "Name": null,
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "Id": 1,
-          "Name": "tobias",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 40000000
-        },
-        "Amount": 5
-      },
-      {
-        "Ingredient": {
-          "Id": 12,
-          "Name": "Matti",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "IngredientT": 0,
-          "Calories": 30
-        },
-        "Amount": 3
-      }
-    ],
-    "TotalCalories": 40000030
+    "Id": 123,
+    "GoalT": 0,
+    "ToolT": 0,
+    "Name": "dbfgdfg",
+    "Ingredients": [],
+    "TotalCalories": 0
+  },
+  {
+    "Id": 123,
+    "GoalT": 0,
+    "ToolT": 0,
+    "Name": "wewe",
+    "Ingredients": [],
+    "TotalCalories": 0
+  },
+  {
+    "Id": 123,
+    "GoalT": 0,
+    "ToolT": 0,
+    "Name": "wrwer",
+    "Ingredients": [],
+    "TotalCalories": 0
+  },
+  {
+    "Id": 123,
+    "GoalT": 0,
+    "ToolT": 0,
+    "Name": "ads",
+    "Ingredients": [],
+    "TotalCalories": 0
   }
 ]

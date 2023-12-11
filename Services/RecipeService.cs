@@ -28,6 +28,20 @@ namespace _4UgersProjekt.Services
 			}
 			return filterList;
 		}
+
+		public IEnumerable<Recipe> ToolFilter(ToolType toolType)
+		{
+			List<Recipe> filterListTool = new List<Recipe>();
+			foreach (Recipe item in _data)
+			{
+
+				if (item.ToolT == toolType)
+				{
+					filterListTool.Add(item);
+				}
+			}
+			return filterListTool;
+		}
 		public IEnumerable<Recipe> CalorieFilter(int maxCalories, int minCalories = 0)
 		{
 			List<Recipe> filterList = new List<Recipe>();

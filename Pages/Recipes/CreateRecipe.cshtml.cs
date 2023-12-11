@@ -17,6 +17,9 @@ namespace _4UgersProjekt.Pages.Recipes
 
 		[BindProperty]
 		public GoalType ChosenGoalType { get; set; }
+
+		public ToolType ChosenToolType  { get; set; }
+
 		public List<Ingredient> Ingredients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
@@ -42,6 +45,8 @@ namespace _4UgersProjekt.Pages.Recipes
             Models.Recipe _recipes = new Models.Recipe(Id,Name);
 
 			_recipes.GoalT = ChosenGoalType;
+
+			_recipes.ToolT = ChosenToolType;
 
 			for (int i = 0; i < Ingredients.Count; i++)
             {

@@ -20,6 +20,8 @@ namespace _4UgersProjekt.Pages.Recipes
 		[BindProperty]
 		public  GoalType GoalType { get; set; }
 
+		public ToolType ToolType { get; set; }
+
 		private IRecipeService _recipeService;
 		private IIngredientService _ingredientService;
 		public GetAllRecipesModel(IRecipeService recipeService, IIngredientService ingredientService)
@@ -69,6 +71,11 @@ namespace _4UgersProjekt.Pages.Recipes
 		public IActionResult OnPostGoalFilter()
 		{
 			Recipes = _recipeService.GoalFilter(GoalType).ToList();
+			return Page();
+		}
+		public IActionResult OnPostToolFilter()
+		{
+			Recipes = _recipeService.ToolFilter(ToolType).ToList();
 			return Page();
 		}
 

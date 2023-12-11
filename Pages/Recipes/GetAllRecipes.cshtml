@@ -30,6 +30,28 @@
 		<input type="submit" asp-page-handler="GoalFilter"
 			   value="Filter" class="btn btn-primary" />
 		</div>
+
+	<form method="post">
+		<div class="form-group">
+			<label class="control-label">Tool Type</label>
+
+			<div class="form-check">
+				<input type="checkbox" id="chk_oven" name="ToolType" value="oven" class="form-check-input" />
+				<label for="chk_oven" class="form-check-label">Oven</label>
+			</div>
+
+			<div class="form-check">
+				<input type="checkbox" id="chk_microwave" name="ToolType" value="microwave" class="form-check-input" />
+				<label for="chk_microwave" class="form-check-label">Microwave</label>
+			</div>
+
+			<div class="form-check">
+				<input type="checkbox" id="chk_pan" name="ToolType" value="pan" class="form-check-input" />
+				<label for="chk_pan" class="form-check-label">Pan</label>
+			</div>
+		</div>
+		<input type="submit" asp-page-handler="ToolFilter" value="Filter by Tool" class="btn btn-primary" />
+	</form>
 </form>
 
 <table class="table table-bordered table-hover table-striped">
@@ -52,7 +74,9 @@
 	<th>
 		Goal type
 	</th>
-
+	<th>
+		Tool type
+	</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -85,6 +109,9 @@
 							</td>
 							<td>
 								@item.GoalT
+							</td>
+							<td>
+								@item.ToolT
 							</td>
 							
 						</tr>

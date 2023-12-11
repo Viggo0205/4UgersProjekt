@@ -16,7 +16,13 @@ namespace _4UgersProjekt.Models
      Cut,
      Maintance
     }
-    public class Recipe : IHaveIdAndName
+	public enum ToolType
+	{
+		oven,
+		microwave,
+		pan,
+	}
+	public class Recipe : IHaveIdAndName
     {
         public Recipe()
         {
@@ -40,6 +46,8 @@ namespace _4UgersProjekt.Models
         [Required(ErrorMessage = "Recipe name is needed")]
 		public GoalType GoalT { get; set; }
 
+		public ToolType ToolT { get; set; }
+
 		public string Name { get; set; }
 
         [Display(Name = "Recipe engridients")]
@@ -48,7 +56,6 @@ namespace _4UgersProjekt.Models
 
         public int TotalCalories
         {
-            
             get 
             {
 				int totalCalories = 0;
