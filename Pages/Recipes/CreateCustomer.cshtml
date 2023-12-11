@@ -34,6 +34,43 @@
             </div>
         }
     </div>
+	<table class="table table-bordered table-hover table-striped">
+		<thead>
+			<tr>
+				<th>
+					Dag
+				</th>
+				<th>
+					Morgen
+				</th>
+				<th>
+					Middag
+				</th>
+				<th>
+					Aften
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			@for (int weekday = 0; weekday < Model.WeekDays.Count; weekday++)
+			{
+				<tr>
+					<td>
+						@Model.WeekDays[weekday].ToString()
+					</td>
+					<td>
+						<select asp-for="@Model.MealPlanIdsMorning[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+					</td>
+					<td>
+						<select asp-for="@Model.MealPlanIdsNoon[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+					</td>
+					<td>
+						<select asp-for="@Model.MealPlanIdsEvening[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
     <p>
         <div class="form-group">
             <input type="submit" value="Create" class="btn btn-primary" />

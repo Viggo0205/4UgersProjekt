@@ -2,6 +2,7 @@ using _4UgersProjekt.Models;
 using _4UgersProjekt.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace _4UgersProjekt.Pages.Recipes
 {
@@ -18,20 +19,61 @@ namespace _4UgersProjekt.Pages.Recipes
 		private ICustomerService _customerService;
         private IRecipeService _recipeService;
 
+        [BindProperty]
+		public List<int> MealPlanIdsMorning { get; set; } = new List<int>();
+
+		[BindProperty]
+		public List<int> MealPlanIdsNoon { get; set; } = new List<int>();
+
+		[BindProperty]
+		public List<int> MealPlanIdsEvening { get; set; } = new List<int>();
+
 		public CreateCustomerModel(ICustomerService customerService, IRecipeService recipeService)
 		{
 			_customerService = customerService;
             _recipeService = recipeService;
+
+			Recipes = _recipeService.Get();
+
+            RecipeSelectList = new SelectList(Recipes, nameof(Recipe.Id), nameof(Recipe.Name));
+		}
+
+        public enum Weekday
+        {
+            Monday,
+            Tuesday,
+            Wedensday, 
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday,
+        }
+
+        public List<Weekday> WeekDays { get { return Enum.GetValues<Weekday>().ToList(); } }
+
+        public SelectList RecipeSelectList { get; set; }
+
+        public class DailyMealPlan
+        {
+            public Recipe? Morning { get; set; }
+			public Recipe? Noon { get; set; }
+			public Recipe? Evening { get; set; }
+
 		}
 		public IActionResult OnGet()
 		{
-            Recipes = _recipeService.Get();
-
             Favories = new List<bool>();
             for (int i = 0; i < Recipes.Count; i++)
             {
                 Favories.Add(false);
             }
+
+			for (int i = 0; i < 7; i++)
+			{
+				MealPlanIdsMorning.Add(0);
+				MealPlanIdsNoon.Add(0);
+				MealPlanIdsEvening.Add(0);
+			}
 
 			return Page();
 		}
@@ -62,10 +104,27 @@ namespace _4UgersProjekt.Pages.Recipes
                 }
             }
 
-            _customerService.SetCurrentCustomer(Customer);
-            _customerService.Add(Customer);
+			for (int day = 0; day < 7; day++)
+			{
+                if (MealPlanIdsMorning[day] != 0)
+                {
+					Customer.MealPlans[(Weekday)day].Morning = _recipeService.Get(MealPlanIdsMorning[day]);
+				}
 
-            Console.WriteLine("Before redirecting to GetAllCustomers");
+				if (MealPlanIdsNoon[day] != 0)
+				{
+					Customer.MealPlans[(Weekday)day].Noon = _recipeService.Get(MealPlanIdsNoon[day]);
+				}
+
+				if (MealPlanIdsEvening[day] != 0)
+				{
+					Customer.MealPlans[(Weekday)day].Evening = _recipeService.Get(MealPlanIdsEvening[day]);
+				}
+			}
+
+			_customerService.Add(Customer);
+
+			Console.WriteLine("Before redirecting to GetAllCustomers");
             return RedirectToPage("/Recipes/GetAllCustomers");
         }
     }
