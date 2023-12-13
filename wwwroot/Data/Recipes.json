@@ -51,9 +51,33 @@
           "Calories": 1234
         },
         "Amount": 7
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 0,
+          "Id": 71,
+          "Name": "kage",
+          "FatPct": 40,
+          "CarbPct": 10,
+          "ProtPct": 30,
+          "Calories": 9012390
+        },
+        "Amount": 2
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 100,
+          "Name": "kagemad2",
+          "FatPct": 40,
+          "CarbPct": 20,
+          "ProtPct": 30,
+          "Calories": 400000
+        },
+        "Amount": 2
       }
     ],
-    "TotalCalories": 40401264
+    "TotalCalories": 49813654
   },
   {
     "Id": 10,
