@@ -122,7 +122,14 @@ namespace _4UgersProjekt.Pages.Recipes
 				}
 			}
 
-			_customerService.Add(Customer);
+            for(int i = 0; i < _customerService.Get().Count; i++)
+            {
+                if (_customerService.Get()[i].Id != Customer.Id)
+                {
+					_customerService.Add(Customer);
+				}		
+			}
+	
 
 			Console.WriteLine("Before redirecting to GetAllCustomers");
             return RedirectToPage("/Recipes/GetAllCustomers");
