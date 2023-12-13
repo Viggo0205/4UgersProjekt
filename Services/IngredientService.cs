@@ -24,6 +24,7 @@ namespace _4UgersProjekt.Services
 					if (i.Id == item.Id)
 					{
 						i.Name = item.Name;
+						i.IngredientT = item.IngredientT; // Update the IngredientT property
 					}
 				}
 				_jsonFile.SaveJson(_data);

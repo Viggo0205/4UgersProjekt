@@ -65,8 +65,8 @@ namespace _4UgersProjekt.Services
             {
                 if (item.Id == itemId)
                 {
-                    _data.Remove(item);
-                    return item;
+                    itemToBeDeleted = item;
+                    break;
                 }
             }
             if (itemToBeDeleted != null)
