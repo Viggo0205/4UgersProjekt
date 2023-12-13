@@ -82,8 +82,6 @@ namespace _4UgersProjekt.Pages.Recipes
         {
             Recipes = _recipeService.Get();
 
-            Console.WriteLine("OnPost method called in CreateCustomerModel");
-
             if (!ModelState.IsValid)
             {
                 foreach (var modelState in ModelState.Values)
@@ -123,8 +121,6 @@ namespace _4UgersProjekt.Pages.Recipes
 			}
 
 			_customerService.Add(Customer);
-
-			Console.WriteLine("Before redirecting to GetAllCustomers");
             return RedirectToPage("/Recipes/GetAllCustomers");
         }
     }

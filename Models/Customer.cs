@@ -25,6 +25,8 @@ namespace _4UgersProjekt.Models
             Email = email;
             KundeKlub = kundeKlub;
 
+
+
 			MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
 			MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
 			MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
@@ -35,6 +37,8 @@ namespace _4UgersProjekt.Models
 		}
 
         public Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan> MealPlans { get; } = new Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan>();
+
+        
 
         [Display(Name = "Customer ID")]
         [Required(ErrorMessage = "Customer ID is needed")]
