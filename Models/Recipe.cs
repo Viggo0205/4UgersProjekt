@@ -18,9 +18,9 @@ namespace _4UgersProjekt.Models
     }
 	public enum ToolType
 	{
-		oven,
-		microwave,
-		pan,
+		Oven,
+		Microwave,
+		Pan,
 	}
 	public class Recipe : IHaveIdAndName
     {

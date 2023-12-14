@@ -5,12 +5,12 @@ using _4UgersProjekt.Models;
 
 namespace _4UgersProjekt.Pages.Recipes
 {
-    public class GetAllRecipesModel : PageModel
-    {
-        public List<Models.Recipe>? Recipes { get; private set; }
+	public class GetAllRecipesModel : PageModel
+	{
+		public List<Models.Recipe>? Recipes { get; private set; }
 		public List<Models.Ingredient>? Ingredients { get; private set; }
-        [BindProperty]
-        public string SearchString { get; set; }
+		[BindProperty]
+		public string SearchString { get; set; }
 		[BindProperty]
 		public int MinCalories { get; set; }
 		[BindProperty]
@@ -18,16 +18,22 @@ namespace _4UgersProjekt.Pages.Recipes
 		[BindProperty]
 		public string SearchType { get; set; }
 		[BindProperty]
-		public  GoalType GoalType { get; set; }
-
+		public GoalType GoalType { get; set; }
+		[BindProperty]
 		public ToolType ToolType { get; set; }
+		[BindProperty]
+		public bool IsOven { get; set; }
+		[BindProperty]
+		public bool IsMicrowave { get; set; }
+		[BindProperty]
+		public bool IsPan { get; set; }
 
 		private IRecipeService _recipeService;
 		private IIngredientService _ingredientService;
 		public GetAllRecipesModel(IRecipeService recipeService, IIngredientService ingredientService)
-        {
-            _recipeService = recipeService;
-            _ingredientService = ingredientService;
+		{
+			_recipeService = recipeService;
+			_ingredientService = ingredientService;
 
 		}
 		public IActionResult OnPost()
@@ -53,15 +59,15 @@ namespace _4UgersProjekt.Pages.Recipes
 		}
 
 		public IActionResult OnPostNameSearch()
-        {
-            Recipes = _recipeService.NameSearch(SearchString).ToList();
-            return Page();
-        }
-        public IActionResult OnPostIngredientSearch()
-        {
-            Recipes = _recipeService.SearchByIngredientName(SearchString).ToList();
-            return Page();
-        }
+		{
+			Recipes = _recipeService.NameSearch(SearchString).ToList();
+			return Page();
+		}
+		public IActionResult OnPostIngredientSearch()
+		{
+			Recipes = _recipeService.SearchByIngredientName(SearchString).ToList();
+			return Page();
+		}
 
 		public IActionResult OnPostCalorieFilter()
 		{
@@ -75,7 +81,29 @@ namespace _4UgersProjekt.Pages.Recipes
 		}
 		public IActionResult OnPostToolFilter()
 		{
-			Recipes = _recipeService.ToolFilter(ToolType).ToList();
+			List<ToolType> ChosenTools = new List<ToolType>();
+
+			if (IsOven)
+			{
+				ChosenTools.Add(ToolType.Oven);
+			}
+
+			if (IsMicrowave)
+			{
+				ChosenTools.Add(ToolType.Microwave);
+			}
+
+			if (IsPan)
+			{
+				ChosenTools.Add(ToolType.Pan);
+
+			}
+
+			if (!IsOven && !IsMicrowave && !IsPan)
+			{
+				ChosenTools.AddRange(Enum.GetValues(typeof(ToolType)).Cast<ToolType>()); // 
+			}
+			Recipes = _recipeService.ToolFilter(ChosenTools).ToList();
 			return Page();
 		}
 

@@ -29,13 +29,13 @@ namespace _4UgersProjekt.Services
 			return filterList;
 		}
 
-		public IEnumerable<Recipe> ToolFilter(ToolType toolType)
+		public IEnumerable<Recipe> ToolFilter(List<ToolType> toolType)
 		{
 			List<Recipe> filterListTool = new List<Recipe>();
 			foreach (Recipe item in _data)
 			{
-
-				if (item.ToolT == toolType)
+				
+				if (toolType.Contains(item.ToolT))
 				{
 					filterListTool.Add(item);
 				}

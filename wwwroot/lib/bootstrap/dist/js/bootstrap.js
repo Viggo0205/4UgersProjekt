@@ -507,7 +507,7 @@
     delete events[typeEvent][fn.uidEvent];
   }
 
-  function removeNamespacedHandlers(element, events, typeEvent, namespace) {
+  function remOvenamespacedHandlers(element, events, typeEvent, namespace) {
     const storeElementEvent = events[typeEvent] || {};
     Object.keys(storeElementEvent).forEach(handlerKey => {
       if (handlerKey.includes(namespace)) {
@@ -554,7 +554,7 @@
 
       if (isNamespace) {
         Object.keys(events).forEach(elementEvent => {
-          removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
+          remOvenamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
         });
       }
 
@@ -1888,7 +1888,7 @@
           elem.classList.add(CLASS_NAME_COLLAPSED);
         }
 
-        elem.setAttribute('aria-expanded', isOpen);
+        elem.setAttribute('aria-exPanded', isOpen);
       });
     } // Static
 
@@ -2071,7 +2071,7 @@
 
       this._element.focus();
 
-      this._element.setAttribute('aria-expanded', true);
+      this._element.setAttribute('aria-exPanded', true);
 
       this._menu.classList.add(CLASS_NAME_SHOW$6);
 
@@ -2130,7 +2130,7 @@
 
       this._element.classList.remove(CLASS_NAME_SHOW$6);
 
-      this._element.setAttribute('aria-expanded', 'false');
+      this._element.setAttribute('aria-exPanded', 'false');
 
       Manipulator.removeDataAttribute(this._menu, 'popper');
       EventHandler.trigger(this._element, EVENT_HIDDEN$4, relatedTarget);
@@ -2261,7 +2261,7 @@
 
       if (!items.length) {
         return;
-      } // if target isn't included in items (e.g. when expanding the dropdown)
+      } // if target isn't included in items (e.g. when exPanding the dropdown)
       // allow cycling to get the last item in case key equals ARROW_UP_KEY
 
 
@@ -3485,7 +3485,7 @@
     pre: [],
     s: [],
     small: [],
-    span: [],
+    sPan: [],
     sub: [],
     sup: [],
     strong: [],
@@ -4717,7 +4717,7 @@
           SelectorEngine.find(SELECTOR_DROPDOWN_TOGGLE, dropdownElement).forEach(dropdown => dropdown.classList.add(CLASS_NAME_ACTIVE));
         }
 
-        element.setAttribute('aria-expanded', true);
+        element.setAttribute('aria-exPanded', true);
       }
 
       if (callback) {

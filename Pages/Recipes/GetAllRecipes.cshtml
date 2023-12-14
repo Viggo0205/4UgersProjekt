@@ -14,44 +14,43 @@
 <form method="post">
 	<div class="input-group mb-3">
 		<div class="input-group-prepend">
-			<span class="input-group-text">Min</span>
+			<sPan class="input-group-text">Min</sPan>
 		</div>
 		<input asp-for="MinCalories" class="form-control mr-1"/>
 		<div class="input-group-prepend">
-			<span class="input-group-text">Max</span>
+			<sPan class="input-group-text">Max</sPan>
 		</div>
 		<input asp-for="MaxCalories" class="form-control mr-1"/>
 		<input type="submit" asp-page-handler="CalorieFilter" 
-			   value="Filter" class="btn btn-primary" />
+			   value="Filtrer" class="btn btn-primary" />
 	</div>
 	<div class="form-group">
 		<label class="control-label">Goal Type</label>
 		<select asp-for="GoalType" asp-items="Html.GetEnumSelectList<Models.GoalType>()" class="form-select form-select-lg mb-3"></select>
 		<input type="submit" asp-page-handler="GoalFilter"
-			   value="Filter" class="btn btn-primary" />
-		</div>
+			   value="Filtrer" class="btn btn-primary" />
+	</div>
 
-	<form method="post">
-		<div class="form-group">
-			<label class="control-label">Tool Type</label>
-
-			<div class="form-check">
-				<input type="checkbox" id="chk_oven" name="ToolType" value="oven" class="form-check-input" />
-				<label for="chk_oven" class="form-check-label">Oven</label>
+	<div class="form-group">
+		<label class="control-label">Tool Type</label>
+		<div>
+			<div>
+				<input type="checkbox" asp-for="IsOven" class="form-check-input" />
+				<label>Oven</label>
 			</div>
-
-			<div class="form-check">
-				<input type="checkbox" id="chk_microwave" name="ToolType" value="microwave" class="form-check-input" />
-				<label for="chk_microwave" class="form-check-label">Microwave</label>
+			<div>
+				<input type="checkbox" asp-for="IsMicrowave" class="form-check-input" />
+				<label>Microwave</label>
 			</div>
-
-			<div class="form-check">
-				<input type="checkbox" id="chk_pan" name="ToolType" value="pan" class="form-check-input" />
-				<label for="chk_pan" class="form-check-label">Pan</label>
+			<div>
+				<input type="checkbox" asp-for="IsPan" class="form-check-input" />
+				<label>Pan</label>
 			</div>
 		</div>
-		<input type="submit" asp-page-handler="ToolFilter" value="Filter by Tool" class="btn btn-primary" />
-	</form>
+		<input type="submit" asp-page-handler="ToolFilter"
+			   value="Filtrer" class="btn btn-primary" />
+	</div>
+
 </form>
 
 <table class="table table-bordered table-hover table-striped">
@@ -102,7 +101,6 @@
 						{
 							@item.Ingredients[i]
 						}
-						
 							</td>
 							<td>
 						@item.TotalCalories

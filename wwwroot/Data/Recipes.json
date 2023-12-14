@@ -2,7 +2,7 @@
   {
     "Id": 10,
     "GoalT": 1,
-    "ToolT": 0,
+    "ToolT": 1,
     "Name": "cookies",
     "Ingredients": [],
     "TotalCalories": 0
@@ -10,7 +10,7 @@
   {
     "Id": 10,
     "GoalT": 1,
-    "ToolT": 0,
+    "ToolT": 2,
     "Name": "Tobias sc",
     "Ingredients": [],
     "TotalCalories": 0
@@ -18,48 +18,16 @@
   {
     "Id": 4,
     "GoalT": 1,
-    "ToolT": 0,
+    "ToolT": 2,
     "Name": "tobiass",
     "Ingredients": [],
     "TotalCalories": 0
   },
   {
-    "Id": 12312,
+    "Id": 0,
     "GoalT": 0,
     "ToolT": 0,
-    "Name": "qwewqe",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 123,
-    "GoalT": 0,
-    "ToolT": 0,
-    "Name": "dbfgdfg",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 123,
-    "GoalT": 0,
-    "ToolT": 0,
-    "Name": "wewe",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 123,
-    "GoalT": 0,
-    "ToolT": 0,
-    "Name": "wrwer",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 123,
-    "GoalT": 0,
-    "ToolT": 0,
-    "Name": "ads",
+    "Name": null,
     "Ingredients": [],
     "TotalCalories": 0
   }
