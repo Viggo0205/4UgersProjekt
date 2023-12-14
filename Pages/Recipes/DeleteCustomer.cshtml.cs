@@ -35,7 +35,7 @@ namespace _4UgersProjekt.Pages.Recipes
             if (deletedCustomer == null)
                 return RedirectToPage("/NotFound"); //NotFound er ikke defineret endnu
 
-            return RedirectToPage("GetAllRecipes");
+            return RedirectToPage("GetAllCustomers");
         }
     }
 }

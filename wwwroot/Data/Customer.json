@@ -2,176 +2,1965 @@
   {
     "MealPlans": {
       "Monday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 4,
+          "GoalT": 1,
+          "Name": "ere",
+          "Ingredients": [],
+          "TotalCalories": 0
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       },
       "Tuesday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       },
       "Wedensday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       },
       "Thursday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       },
       "Friday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       },
       "Saturday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       },
       "Sunday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      }
-    },
-    "Id": 1321,
-    "Name": "1231",
-    "Email": "1231",
-    "KundeKlub": true,
-    "Favorites": []
-  },
-  {
-    "MealPlans": {
-      "Monday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Tuesday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Wedensday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Thursday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Friday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Saturday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Sunday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      }
-    },
-    "Id": 123,
-    "Name": "123",
-    "Email": "123",
-    "KundeKlub": false,
-    "Favorites": []
-  },
-  {
-    "MealPlans": {
-      "Monday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Tuesday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Wedensday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Thursday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Friday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Saturday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Sunday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      }
-    },
-    "Id": 974,
-    "Name": "Per",
-    "Email": "per@per.dk",
-    "KundeKlub": false,
-    "Favorites": []
-  },
-  {
-    "MealPlans": {
-      "Monday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Tuesday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Wedensday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Thursday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Friday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Saturday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Sunday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
+        "Morning": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Noon": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        },
+        "Evening": {
+          "Id": 0,
+          "GoalT": 0,
+          "Name": null,
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "tobias",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 40000000
+              },
+              "Amount": 999
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 31,
+                "Name": "jonas",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 400000
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 12,
+                "Name": "Matti",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 30
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 40,
+                "Name": "Cunt",
+                "FatPct": 0,
+                "CarbPct": 0,
+                "ProtPct": 0,
+                "Calories": 1234
+              },
+              "Amount": 7
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 71,
+                "Name": "kage",
+                "FatPct": 40,
+                "CarbPct": 10,
+                "ProtPct": 30,
+                "Calories": 9012390
+              },
+              "Amount": 2
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 100,
+                "Name": "kagemad2",
+                "FatPct": 40,
+                "CarbPct": 20,
+                "ProtPct": 30,
+                "Calories": 400000
+              },
+              "Amount": 2
+            }
+          ],
+          "TotalCalories": 49813654
+        }
       }
     },
     "Id": 543,
     "Name": "ppp",
     "Email": "perrr@hotmail.com",
+    "KundeKlub": true,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 400000
+            },
+            "Amount": 10
+          }
+        ],
+        "TotalCalories": 40400000
+      },
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "shut up",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 2
+          }
+        ],
+        "TotalCalories": 40000000
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 0,
+    "Name": null,
+    "Email": null,
+    "KundeKlub": false,
+    "Favorites": []
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "dig",
+    "Email": "hhhh",
+    "KundeKlub": true,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 400000
+            },
+            "Amount": 10
+          }
+        ],
+        "TotalCalories": 40400000
+      },
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "shut up",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 2
+          }
+        ],
+        "TotalCalories": 40000000
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "dig",
+    "Email": "hhhh",
+    "KundeKlub": true,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 400000
+            },
+            "Amount": 10
+          }
+        ],
+        "TotalCalories": 40400000
+      },
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "shut up",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 2
+          }
+        ],
+        "TotalCalories": 40000000
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "ffefe",
+    "Email": "zeroh8te@gmail.com",
     "KundeKlub": false,
     "Favorites": [
       {
@@ -181,24 +1970,24 @@
         "Ingredients": [
           {
             "Ingredient": {
+              "IngredientT": 0,
               "Id": 1,
               "Name": "tobias",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
               "Calories": 40000000
             },
             "Amount": 4
           },
           {
             "Ingredient": {
+              "IngredientT": 0,
               "Id": 31,
               "Name": "jonas",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
               "Calories": 400000
             },
             "Amount": 10
@@ -207,24 +1996,101 @@
         "TotalCalories": 40400000
       },
       {
-        "Id": 13,
+        "Id": 12,
         "GoalT": 0,
-        "Name": "shut up 2",
+        "Name": "Mattis mad",
         "Ingredients": [
           {
             "Ingredient": {
+              "IngredientT": 0,
+              "Id": 12,
+              "Name": "Matti",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 30
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 30
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "ffefe",
+    "Email": "zeroh8te@gmail.com",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
               "Id": 31,
               "Name": "jonas",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
               "Calories": 400000
             },
-            "Amount": 12
+            "Amount": 10
           }
         ],
-        "TotalCalories": 400000
+        "TotalCalories": 40400000
       },
       {
         "Id": 12,
@@ -233,12 +2099,206 @@
         "Ingredients": [
           {
             "Ingredient": {
+              "IngredientT": 0,
               "Id": 12,
               "Name": "Matti",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
+              "Calories": 30
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 30
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "ffefe",
+    "Email": "zeroh8te@gmail.com",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
               "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 400000
+            },
+            "Amount": 10
+          }
+        ],
+        "TotalCalories": 40400000
+      },
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "Mattis mad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 12,
+              "Name": "Matti",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 30
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 30
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "ffefe",
+    "Email": "zeroh8te@gmail.com",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 400000
+            },
+            "Amount": 10
+          }
+        ],
+        "TotalCalories": 40400000
+      },
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "Mattis mad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 12,
+              "Name": "Matti",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
               "Calories": 30
             },
             "Amount": 1
@@ -287,38 +2347,135 @@
       }
     },
     "Id": 0,
-    "Name": "dig",
-    "Email": "fff",
-    "KundeKlub": true,
+    "Name": "ffefe",
+    "Email": "zeroh8te@gmail.com",
+    "KundeKlub": false,
     "Favorites": [
       {
-        "Id": 0,
+        "Id": 10,
         "GoalT": 0,
-        "Name": "mm",
+        "Name": "Kagemad",
         "Ingredients": [
           {
             "Ingredient": {
+              "IngredientT": 0,
               "Id": 1,
               "Name": "tobias",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
               "Calories": 40000000
             },
-            "Amount": 2
+            "Amount": 4
           },
           {
             "Ingredient": {
+              "IngredientT": 0,
               "Id": 31,
               "Name": "jonas",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
               "Calories": 400000
             },
-            "Amount": 2
+            "Amount": 10
+          }
+        ],
+        "TotalCalories": 40400000
+      },
+      {
+        "Id": 12,
+        "GoalT": 0,
+        "Name": "Mattis mad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 12,
+              "Name": "Matti",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 30
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 30
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "dig",
+    "Email": "dgsg",
+    "KundeKlub": false,
+    "Favorites": [
+      {
+        "Id": 10,
+        "GoalT": 0,
+        "Name": "Kagemad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 40000000
+            },
+            "Amount": 4
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
+              "FatPct": 0,
+              "CarbPct": 0,
+              "ProtPct": 0,
+              "Calories": 400000
+            },
+            "Amount": 10
           }
         ],
         "TotalCalories": 40400000
@@ -363,282 +2520,42 @@
         "Evening": null
       }
     },
-    "Id": 666,
-    "Name": "ss",
-    "Email": "ss",
+    "Id": 2,
+    "Name": "dig",
+    "Email": "dgsg",
     "KundeKlub": false,
     "Favorites": [
       {
-        "Id": 12,
+        "Id": 10,
         "GoalT": 0,
-        "Name": "Mattis mad",
+        "Name": "Kagemad",
         "Ingredients": [
           {
             "Ingredient": {
-              "Id": 12,
-              "Name": "Matti",
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "tobias",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
-              "Calories": 30
+              "Calories": 40000000
             },
-            "Amount": 1
-          }
-        ],
-        "TotalCalories": 30
-      },
-      {
-        "Id": 123,
-        "GoalT": 0,
-        "Name": "hanmse",
-        "Ingredients": [],
-        "TotalCalories": 0
-      }
-    ]
-  },
-  {
-    "MealPlans": {
-      "Monday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Tuesday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Wedensday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Thursday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Friday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Saturday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Sunday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      }
-    },
-    "Id": 777,
-    "Name": "qq",
-    "Email": "qq",
-    "KundeKlub": false,
-    "Favorites": [
-      {
-        "Id": 23,
-        "GoalT": 0,
-        "Name": "hans",
-        "Ingredients": [],
-        "TotalCalories": 0
-      },
-      {
-        "Id": 3,
-        "GoalT": 0,
-        "Name": "sdf",
-        "Ingredients": [],
-        "TotalCalories": 0
-      }
-    ]
-  },
-  {
-    "MealPlans": {
-      "Monday": {
-        "Morning": {
-          "Id": 12,
-          "GoalT": 0,
-          "Name": "shut up",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 1,
-                "Name": "tobias",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 40000000
-              },
-              "Amount": 2
-            }
-          ],
-          "TotalCalories": 40000000
-        },
-        "Noon": {
-          "Id": 50,
-          "GoalT": 0,
-          "Name": "abe",
-          "Ingredients": [],
-          "TotalCalories": 0
-        },
-        "Evening": null
-      },
-      "Tuesday": {
-        "Morning": null,
-        "Noon": {
-          "Id": 13,
-          "GoalT": 0,
-          "Name": "shut up 2",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 31,
-                "Name": "jonas",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 400000
-              },
-              "Amount": 12
-            }
-          ],
-          "TotalCalories": 400000
-        },
-        "Evening": {
-          "Id": 50,
-          "GoalT": 0,
-          "Name": "abe",
-          "Ingredients": [],
-          "TotalCalories": 0
-        }
-      },
-      "Wedensday": {
-        "Morning": {
-          "Id": 13,
-          "GoalT": 0,
-          "Name": "shut up 2",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 31,
-                "Name": "jonas",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 400000
-              },
-              "Amount": 12
-            }
-          ],
-          "TotalCalories": 400000
-        },
-        "Noon": null,
-        "Evening": {
-          "Id": 123,
-          "GoalT": 0,
-          "Name": "hanmse",
-          "Ingredients": [],
-          "TotalCalories": 0
-        }
-      },
-      "Thursday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Friday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": null
-      },
-      "Saturday": {
-        "Morning": null,
-        "Noon": {
-          "Id": 12,
-          "GoalT": 0,
-          "Name": "shut up",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 1,
-                "Name": "tobias",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 40000000
-              },
-              "Amount": 2
-            }
-          ],
-          "TotalCalories": 40000000
-        },
-        "Evening": null
-      },
-      "Sunday": {
-        "Morning": null,
-        "Noon": null,
-        "Evening": {
-          "Id": 123,
-          "GoalT": 0,
-          "Name": "hanmse",
-          "Ingredients": [],
-          "TotalCalories": 0
-        }
-      }
-    },
-    "Id": 888,
-    "Name": "nn",
-    "Email": "nn",
-    "KundeKlub": false,
-    "Favorites": [
-      {
-        "Id": 12,
-        "GoalT": 0,
-        "Name": "Mattis mad",
-        "Ingredients": [
+            "Amount": 4
+          },
           {
             "Ingredient": {
-              "Id": 12,
-              "Name": "Matti",
+              "IngredientT": 0,
+              "Id": 31,
+              "Name": "jonas",
               "FatPct": 0,
               "CarbPct": 0,
               "ProtPct": 0,
-              "IngredientT": 0,
-              "Calories": 30
+              "Calories": 400000
             },
-            "Amount": 1
+            "Amount": 10
           }
         ],
-        "TotalCalories": 30
-      },
-      {
-        "Id": 50,
-        "GoalT": 0,
-        "Name": "abe",
-        "Ingredients": [],
-        "TotalCalories": 0
-      },
-      {
-        "Id": 23,
-        "GoalT": 0,
-        "Name": "hans",
-        "Ingredients": [],
-        "TotalCalories": 0
-      },
-      {
-        "Id": 3,
-        "GoalT": 0,
-        "Name": "sdf",
-        "Ingredients": [],
-        "TotalCalories": 0
+        "TotalCalories": 40400000
       }
     ]
   }

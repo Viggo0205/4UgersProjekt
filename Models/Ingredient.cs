@@ -1,10 +1,13 @@
 ﻿using _4UgersProjekt.Services;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
 namespace _4UgersProjekt.Models
 {
 	public class Ingredient : IHaveIdAndName
 	{
+		[BindProperty]
+		public IngredientType IngredientT { get; set; }
 		public enum IngredientType
 		{
 			Meat,
@@ -43,10 +46,10 @@ namespace _4UgersProjekt.Models
 			get; set;
 		}
 
-		public IngredientType IngredientT
+		/*public IngredientType IngredientT
 		{
 			get; set;
-		}
+		}*/
 
 		public int Calories
 		{

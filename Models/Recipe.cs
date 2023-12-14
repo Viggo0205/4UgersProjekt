@@ -7,8 +7,7 @@ namespace _4UgersProjekt.Models
 	{
 		Breakfast, 
         Lunch,
-        Dinner,
-        Snack
+        Dinner      
 	}
     public enum GoalType
     {

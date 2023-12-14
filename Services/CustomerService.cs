@@ -1,13 +1,16 @@
 ﻿using _4UgersProjekt.Models;
+using _4UgersProjekt.Pages.Recipes;
 
 namespace _4UgersProjekt.Services
 {
     public class CustomerService : DataRepository<Customer>, ICustomerService
     {
 
+        private readonly IRecipeService _recipeService;
 
-        public CustomerService(IWebHostEnvironment webHostEnvironment) : base(new JSonFileCustomerService(webHostEnvironment))
+        public CustomerService(IWebHostEnvironment webHostEnvironment, IRecipeService recipeService) : base(new JSonFileCustomerService(webHostEnvironment))
         {
+            _recipeService = recipeService;
         }
 
         public Customer _customer = new Customer();
@@ -31,16 +34,38 @@ namespace _4UgersProjekt.Services
         {
             if (item != null)
             {
-                foreach (Customer i in _data)
+                Customer existingCustomer = Get(item.Id);
+                if (existingCustomer != null)
                 {
-                    if (i.Id == item.Id)
+                    existingCustomer.Name = item.Name;
+                    existingCustomer.Email = item.Email;
+                    existingCustomer.KundeKlub = item.KundeKlub;
+
+                    // Update favorite recipes
+                    existingCustomer.Favorites.Clear();
+                    foreach (var recipe in item.Favorites)
                     {
-                        i.Name = item.Name;
+                        existingCustomer.Favorites.Add(recipe);
                     }
+
+                    // Update meal plans
+                    for (int day = 0; day < 7; day++)
+                    {
+                        existingCustomer.MealPlans[(CreateCustomerModel.Weekday)day].Morning =
+                            _recipeService.Get(item.MealPlans[(CreateCustomerModel.Weekday)day].Morning?.Id ?? 0);
+
+                        existingCustomer.MealPlans[(CreateCustomerModel.Weekday)day].Noon =
+                            _recipeService.Get(item.MealPlans[(CreateCustomerModel.Weekday)day].Noon?.Id ?? 0);
+
+                        existingCustomer.MealPlans[(CreateCustomerModel.Weekday)day].Evening =
+                            _recipeService.Get(item.MealPlans[(CreateCustomerModel.Weekday)day].Evening?.Id ?? 0);
+                    }
+
+                    _jsonFile.SaveJson(_data);
                 }
-                _jsonFile.SaveJson(_data);
             }
         }
+
         public void AddFavoriteRecipe(int customerId, Recipe recipe)
         {
             var customer = Get(customerId);
