@@ -50,11 +50,18 @@ namespace _4UgersProjekt.Pages.Recipes
                     return RedirectToPage("/NotFound");
                 }
 
-                // Initialize the selected favorites checkboxes
-                Favories = _recipeService.Get().Select(r => Customer.Favorites.Contains(r)).ToList();
+            // Initialize the selected favorites checkboxes
+            // Favories = _recipeService.Get().Select(r => Customer.Favorites.Contains(r)).ToList();
 
-                // Initialize the selected recipe IDs for each day's meal plan
-                for (int day = 0; day < 7; day++)
+            List<Recipe> recipes = _recipeService.Get();
+
+            foreach (Recipe recipe in recipes)
+            {
+                Favories.Add(Customer.Favorites.Select(r => r.Id).Contains(recipe.Id));
+            }
+
+            // Initialize the selected recipe IDs for each day's meal plan
+            for (int day = 0; day < 7; day++)
             {
                 MealPlanIdsMorning.Add(Customer.MealPlans[(CreateCustomerModel.Weekday)day]?.Morning?.Id ?? 0);
                 MealPlanIdsNoon.Add(Customer.MealPlans[(CreateCustomerModel.Weekday)day]?.Noon?.Id ?? 0);

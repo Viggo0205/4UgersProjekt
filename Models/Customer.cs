@@ -34,7 +34,7 @@ namespace _4UgersProjekt.Models
             MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
         }
 
-        public Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan> MealPlans { get; } = new Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan>();
+        public Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan> MealPlans { get; set; } = new Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan>();
 
         [Display(Name = "Customer ID")]
         [Required(ErrorMessage = "Customer ID is needed")]
