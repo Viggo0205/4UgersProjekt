@@ -14,22 +14,53 @@
 <form method="post">
 	<div class="input-group mb-3">
 		<div class="input-group-prepend">
-			<span class="input-group-text">Min</span>
+			<sPan class="input-group-text">Min</sPan>
 		</div>
 		<input asp-for="MinCalories" class="form-control mr-1"/>
 		<div class="input-group-prepend">
-			<span class="input-group-text">Max</span>
+			<sPan class="input-group-text">Max</sPan>
 		</div>
 		<input asp-for="MaxCalories" class="form-control mr-1"/>
 		<input type="submit" asp-page-handler="CalorieFilter" 
-			   value="Filter" class="btn btn-primary" />
+			   value="Filtrer" class="btn btn-primary" />
 	</div>
 	<div class="form-group">
 		<label class="control-label">Goal Type</label>
 		<select asp-for="GoalType" asp-items="Html.GetEnumSelectList<Models.GoalType>()" class="form-select form-select-lg mb-3"></select>
 		<input type="submit" asp-page-handler="GoalFilter"
-			   value="Filter" class="btn btn-primary" />
+			   value="Filtrer" class="btn btn-primary" />
+	</div>
+
+	<div class="form-group">
+		<label class="control-label">Tool Type</label>
+		<div>
+			<div>
+				<input type="checkbox" asp-for="IsOven" class="form-check-input" />
+				<label>Oven</label>
+			</div>
+			<div>
+				<input type="checkbox" asp-for="IsMicrowave" class="form-check-input" />
+				<label>Microwave</label>
+			</div>
+			<div>
+				<input type="checkbox" asp-for="IsPan" class="form-check-input" />
+				<label>Pan</label>
+			</div>
 		</div>
+		<input type="submit" asp-page-handler="ToolFilter"
+			   value="Filtrer" class="btn btn-primary" />
+	</div>
+	<div class="form-group">
+		<label class="control-label">Allergies</label>
+		<div>
+			<div>
+				<input type="checkbox" asp-for="Lactose" class="form-check-input" />
+				<label>Laktose-free</label>
+			</div>
+			<input type="submit" asp-page-handler="LactoseFilter"
+				   value="Filtrer" class="btn btn-primary" />
+		</div>
+	</div>
 </form>
 
 <table class="table table-bordered table-hover table-striped">
@@ -52,7 +83,9 @@
 	<th>
 		Goal type
 	</th>
-
+	<th>
+		Tool type
+	</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -78,13 +111,15 @@
 						{
 							@item.Ingredients[i]
 						}
-						
 							</td>
 							<td>
 						@item.TotalCalories
 							</td>
 							<td>
 								@item.GoalT
+							</td>
+							<td>
+								@item.ToolT
 							</td>
 							
 						</tr>

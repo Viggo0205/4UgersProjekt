@@ -410,7 +410,7 @@ $.extend( $.validator, {
 
 			function delegate( event ) {
 
-				// Set form expando on contenteditable
+				// Set form exPando on contenteditable
 				if ( !this.form && this.hasAttribute( "contenteditable" ) ) {
 					this.form = $( this ).closest( "form" )[ 0 ];
 					this.name = $( this ).attr( "name" );
@@ -643,7 +643,7 @@ $.extend( $.validator, {
 					console.error( "%o has no name assigned", this );
 				}
 
-				// Set form expando on contenteditable
+				// Set form exPando on contenteditable
 				if ( this.hasAttribute( "contenteditable" ) ) {
 					this.form = $( this ).closest( "form" )[ 0 ];
 					this.name = name;

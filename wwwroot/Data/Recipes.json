@@ -84,23 +84,26 @@
     "TotalCalories": 401234
   },
   {
-    "Id": 3,
-    "GoalT": 0,
-    "Name": "sdf",
+    "Id": 10,
+    "GoalT": 1,
+    "ToolT": 2,
+    "Name": "Tobias sc",
     "Ingredients": [],
     "TotalCalories": 0
   },
   {
     "Id": 4,
     "GoalT": 1,
-    "Name": "ere",
+    "ToolT": 2,
+    "Name": "tobiass",
     "Ingredients": [],
     "TotalCalories": 0
   },
   {
-    "Id": 112,
-    "GoalT": 1,
-    "Name": "werwer",
+    "Id": 0,
+    "GoalT": 0,
+    "ToolT": 0,
+    "Name": null,
     "Ingredients": [],
     "TotalCalories": 0
   }

@@ -1,4 +1,5 @@
 ﻿using _4UgersProjekt.Models;
+using System.Linq;
 
 namespace _4UgersProjekt.Services
 {
@@ -28,6 +29,20 @@ namespace _4UgersProjekt.Services
 			}
 			return filterList;
 		}
+
+		public IEnumerable<Recipe> ToolFilter(List<ToolType> toolType)
+		{
+			List<Recipe> filterListTool = new List<Recipe>();
+			foreach (Recipe item in _data)
+			{
+				
+				if (toolType.Contains(item.ToolT))
+				{
+					filterListTool.Add(item);
+				}
+			}
+			return filterListTool;
+		}
 		public IEnumerable<Recipe> CalorieFilter(int maxCalories, int minCalories = 0)
 		{
 			List<Recipe> filterList = new List<Recipe>();
@@ -47,8 +62,58 @@ namespace _4UgersProjekt.Services
 
 			return filterList;
 		}
+		//public IEnumerable<Recipe> LactoseFilter(List<Recipe> RecipeLactoseFilterList)
+		//{
+		//	List<Recipe> filterList = new List<Recipe>();
+		//	for (int i = 0; i < RecipeLactoseFilterList; i++)
+		//	{
+		//		for (int j = 0; j < _recipes.LactoseList.Count; i++)
+		//			if (_recipes.Ingredients.Contains(j)
+		//			{
+		//				filterList.Add(i);
+		//			}
+		//	}
+		//	return filterList;
+		//}
 
-        public override void Update(Recipe updatedRecipe)
+
+		public IEnumerable<Recipe> LactoseFilter()
+		{
+			List<Recipe> filterList = new List<Recipe>();
+
+			foreach (Recipe r in _data)
+			{
+				bool hasLactose = false;
+
+				foreach (RecipeComponent rc in r.Ingredients)
+				{
+					if (Recipe.LactoseList.Contains(rc.Ingredient.Name.ToLower()))
+						hasLactose = true;
+				}
+
+				if (!hasLactose)
+					filterList.Add(r);
+			}
+
+			return filterList;
+		}
+
+		//public IEnumerable<Recipe> LactoseFilter(List<Recipe> RecipeLactoseFilterList)
+		//{
+		//	List<Recipe> filterList = new List<Recipe>();
+		//	foreach (var i in _data)
+		//	{
+		//		foreach (var j in _recipes.LactoseList)
+		//			if (filterlist[i] ==LactoseFilter)
+		//			{
+		//				filterList.Add(i);
+		//			}
+		//	}
+		//	return filterList;
+		//}
+
+
+		public override void Update(Recipe updatedRecipe)
         {
             if (updatedRecipe != null)
             {

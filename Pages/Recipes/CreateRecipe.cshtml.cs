@@ -2,6 +2,7 @@ using _4UgersProjekt.Services;
 using _4UgersProjekt.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 
 namespace _4UgersProjekt.Pages.Recipes
 {
@@ -17,6 +18,10 @@ namespace _4UgersProjekt.Pages.Recipes
 
 		[BindProperty]
 		public GoalType ChosenGoalType { get; set; }
+
+		[BindProperty]
+		public ToolType ChosenToolType  { get; set; }
+
 		public List<Ingredient> Ingredients { get;}
 		[BindProperty]
 		public List<int> Amount { get;}    
@@ -43,6 +48,8 @@ namespace _4UgersProjekt.Pages.Recipes
 
 			_recipes.GoalT = ChosenGoalType;
 
+            _recipes.ToolT = ChosenToolType;
+		
 			for (int i = 0; i < Ingredients.Count; i++)
             {
                 if (Amount[i] > 0)
