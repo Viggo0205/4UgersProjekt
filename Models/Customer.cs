@@ -9,14 +9,14 @@ namespace _4UgersProjekt.Models
     {
         public Customer()
         {
-			MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Thursday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Friday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Saturday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
-		}
+            MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Thursday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Friday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Saturday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
+        }
 
         public Customer(int id, string name, string email, bool kundeKlub)
         {
@@ -25,18 +25,16 @@ namespace _4UgersProjekt.Models
             Email = email;
             KundeKlub = kundeKlub;
 
+            MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Thursday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Friday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Saturday] = new CreateCustomerModel.DailyMealPlan();
+            MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
+        }
 
-
-			MealPlans[CreateCustomerModel.Weekday.Monday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Tuesday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Wedensday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Thursday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Friday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Saturday] = new CreateCustomerModel.DailyMealPlan();
-			MealPlans[CreateCustomerModel.Weekday.Sunday] = new CreateCustomerModel.DailyMealPlan();
-		}
-
-        public Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan> MealPlans { get; } = new Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan>();
+        public Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan> MealPlans { get; set; } = new Dictionary<CreateCustomerModel.Weekday, CreateCustomerModel.DailyMealPlan>();
 
         
 
@@ -55,5 +53,7 @@ namespace _4UgersProjekt.Models
         public bool KundeKlub { get; set; }
 
         public List<Recipe> Favorites { get; set; } = new List<Recipe>();
+
+        
     }
 }

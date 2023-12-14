@@ -8,9 +8,9 @@ using System.Linq;
 namespace _4UgersProjekt.Pages.Recipes
 {
     public class CreateIngredientModel : PageModel
-    {
+	{
 		[BindProperty]
-		public  Ingredient Ingredient { get; set; }
+		public Ingredient Ingredient { get; set; }
 
 		[BindProperty]
 		public Ingredient.IngredientType ChosenIngredientType { get; set; }

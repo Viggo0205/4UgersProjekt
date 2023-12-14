@@ -1,0 +1,33 @@
+﻿@page
+@model _4UgersProjekt.Pages.Recipes.EditIngredientModel
+
+<h1>Edit Ingredient</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Ingredient.Id" class="control-label"></label>
+        <input asp-for="Ingredient.Id" class="form-control" readonly />
+        <span asp-validation-for="Ingredient.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Ingredient.Name" class="control-label"></label>
+        <input asp-for="Ingredient.Name" class="form-control" />
+        <span asp-validation-for="Ingredient.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Ingredient.IngredientT" class="control-label">Ingredient Type</label>
+        <select asp-for="ChosenIngredientType" asp-items="Html.GetEnumSelectList<Models.Ingredient.IngredientType>()" class="form-select form-select-lg mb-3"></select>
+        <span asp-validation-for="Ingredient.IngredientT" class="text-danger"></span>
+    </div>
+    <!-- Add other fields as needed -->
+
+    <p>
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary" />
+        </div>
+    </p>
+</form>
+
+<p>
+    <a asp-page="/Recipe/GetAllRecipes">Back to List</a>
+</p>

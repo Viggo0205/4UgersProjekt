@@ -1,65 +1,38 @@
 [
   {
-    "Id": 1,
-    "Name": "tobias",
-    "FatPct": 0,
-    "CarbPct": 0,
-    "ProtPct": 0,
-    "IngredientT": 0,
-    "Calories": 40000000
-  },
-  {
-    "Id": 31,
-    "Name": "jonas",
-    "FatPct": 0,
-    "CarbPct": 0,
-    "ProtPct": 0,
-    "IngredientT": 0,
-    "Calories": 400000
-  },
-  {
-    "Id": 12,
-    "Name": "Matti",
-    "FatPct": 0,
-    "CarbPct": 0,
-    "ProtPct": 0,
-    "IngredientT": 0,
-    "Calories": 30
-  },
-  {
+    "IngredientT": 1,
     "Id": 40,
     "Name": "Cunt",
     "FatPct": 0,
     "CarbPct": 0,
     "ProtPct": 0,
-    "IngredientT": 0,
     "Calories": 1234
   },
   {
-    "Id": 31,
-    "Name": "Hakkek\u00F8d",
-    "FatPct": 7,
-    "CarbPct": 76,
-    "ProtPct": 7,
     "IngredientT": 0,
-    "Calories": 500
-  },
-  {
     "Id": 71,
     "Name": "kage",
     "FatPct": 40,
     "CarbPct": 10,
     "ProtPct": 30,
-    "IngredientT": 0,
     "Calories": 9012390
   },
   {
+    "IngredientT": 1,
     "Id": 100,
     "Name": "kagemad2",
     "FatPct": 40,
     "CarbPct": 20,
     "ProtPct": 30,
-    "IngredientT": 1,
     "Calories": 400000
+  },
+  {
+    "IngredientT": 0,
+    "Id": 1,
+    "Name": "tobia",
+    "FatPct": 0,
+    "CarbPct": 0,
+    "ProtPct": 0,
+    "Calories": 0
   }
 ]

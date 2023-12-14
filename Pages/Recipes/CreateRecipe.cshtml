@@ -6,16 +6,28 @@
 	<div class="form-group">
 		<label asp-for="Id" class="control-label"></label>
 		<input asp-for="Id" class="form-control"/>
-		<span asp-validation-for="Id" class="text-danger"></span>
+		<sPan asp-validation-for="Id" class="text-danger"></sPan>
 	</div>
 	<div class="form-group">
 		<label class="control-label">Goal Type</label>
 		<select asp-for="ChosenGoalType" asp-items="Html.GetEnumSelectList<Models.GoalType>()" class="form-select form-select-lg mb-3"></select>
 	</div>
+
+	 <div class="form-group">
+		<label class="control-label">Tool Type</label>
+		<select asp-for="ChosenToolType" asp-items="Html.GetEnumSelectList<Models.ToolType>()" class="form-select form-select-lg mb-3"></select>
+	</div>
+	@* <div class="form-group">
+		<div>
+			<input type="checkbox" asp-for="IsPan" class="form-check-input" />
+			<label>Pan</label>
+		</div>
+	</div> *@
+
 	<div class="form-group">
 		<label asp-for="Name" class="control-label"></label>
 		<input asp-for="Name" class="form-control" />
-		<span asp-validation-for="Name" class="text-danger"></span>
+		<sPan asp-validation-for="Name" class="text-danger"></sPan>
 	</div>
 <table class="table table-bordered table-hover table-striped">
 	<thead>

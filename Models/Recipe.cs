@@ -7,8 +7,7 @@ namespace _4UgersProjekt.Models
 	{
 		Breakfast, 
         Lunch,
-        Dinner,
-        Snack
+        Dinner      
 	}
     public enum GoalType
     {
@@ -16,7 +15,13 @@ namespace _4UgersProjekt.Models
      Cut,
      Maintance
     }
-    public class Recipe : IHaveIdAndName
+	public enum ToolType
+	{
+		Oven,
+		Microwave,
+		Pan,
+	}
+	public class Recipe : IHaveIdAndName
     {
         public Recipe()
         {
@@ -40,6 +45,10 @@ namespace _4UgersProjekt.Models
         [Required(ErrorMessage = "Recipe name is needed")]
 		public GoalType GoalT { get; set; }
 
+		public ToolType ToolT { get; set; }
+
+        public static List<string> LactoseList {  get; set; } = new List<string>() { "smør","mælk","ost"};
+
 		public string Name { get; set; }
 
         [Display(Name = "Recipe engridients")]
@@ -48,7 +57,6 @@ namespace _4UgersProjekt.Models
 
         public int TotalCalories
         {
-            
             get 
             {
 				int totalCalories = 0;
@@ -66,9 +74,19 @@ namespace _4UgersProjekt.Models
             }
         }
 
-		public override string ToString()
-		{
-			return Name;
-		}
-	}
+        public override string ToString()
+        {
+            return Name;
+        }
+        public int getCount(int id)
+        {
+            foreach (RecipeComponent component in Ingredients)
+            {
+                if (component.Ingredient.Id == id)
+                    return component.Amount;
+            }
+            return 0;
+        }
+
+    }
 }

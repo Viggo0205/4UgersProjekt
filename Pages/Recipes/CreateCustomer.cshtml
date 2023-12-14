@@ -6,22 +6,26 @@
     <div class="form-group">
         <label asp-for="Customer.Id" class="control-label"></label>
         <input asp-for="Customer.Id" class="form-control" />
-        <span asp-validation-for="Customer.Id" class="text-danger"></span>
+        <sPan asp-validation-for="Customer.Id" class="text-danger"></sPan>
+    </div>
+       <div class="form-group">
+       <p> @Model.ErrorMessage </p>
+        
     </div>
     <div class="form-group">
         <label asp-for="Customer.Name" class="control-label"></label>
         <input asp-for="Customer.Name" class="form-control" />
-        <span asp-validation-for="Customer.Name" class="text-danger"></span>
+        <sPan asp-validation-for="Customer.Name" class="text-danger"></sPan>
     </div>
     <div class="form-group">
         <label asp-for="Customer.Email" class="control-label"></label>
         <input asp-for="Customer.Email" class="form-control" />
-        <span asp-validation-for="Customer.Email" class="text-danger"></span>
+        <sPan asp-validation-for="Customer.Email" class="text-danger"></sPan>
     </div>
     <div class="form-group">
         <label asp-for="Customer.KundeKlub" class="control-label"></label>
         <input asp-for="Customer.KundeKlub" class="form-check-input" />
-        <span asp-validation-for="Customer.KundeKlub" class="text-danger"></span>
+        <sPan asp-validation-for="Customer.KundeKlub" class="text-danger"></sPan>
     </div>
     <h2>Manage Favorite Recipes</h2>
     <div class="form-group">
@@ -34,6 +38,7 @@
             </div>
         }
     </div>
+	<h2>Meal plan</h2>
 	<table class="table table-bordered table-hover table-striped">
 		<thead>
 			<tr>
@@ -59,13 +64,22 @@
 						@Model.WeekDays[weekday].ToString()
 					</td>
 					<td>
-						<select asp-for="@Model.MealPlanIdsMorning[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+						<select
+							asp-for="@Model.MealPlanIdsMorning[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+							<option value="0">-- Select Recipe --</option>
+						</select>
 					</td>
 					<td>
-						<select asp-for="@Model.MealPlanIdsNoon[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+						<select 
+							asp-for="@Model.MealPlanIdsNoon[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+							<option value="0">-- Select Recipe --</option>
+						</select>
 					</td>
 					<td>
-						<select asp-for="@Model.MealPlanIdsEvening[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+						<select 
+							asp-for="@Model.MealPlanIdsEvening[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+							<option value="0">-- Select Recipe --</option>
+						</select>
 					</td>
 				</tr>
 			}

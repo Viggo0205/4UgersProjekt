@@ -1,0 +1,90 @@
+﻿@page
+@model _4UgersProjekt.Pages.Recipes.EditCustomerModel
+@{
+}
+
+<h1>Edit Customer</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Customer.Id" class="control-label"></label>
+        <input asp-for="Customer.Id" class="form-control" readonly />
+        <span asp-validation-for="Customer.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Name" class="control-label"></label>
+        <input asp-for="Customer.Name" class="form-control" />
+        <span asp-validation-for="Customer.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.Email" class="control-label"></label>
+        <input asp-for="Customer.Email" class="form-control" />
+        <span asp-validation-for="Customer.Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Customer.KundeKlub" class="control-label"></label>
+        <input asp-for="Customer.KundeKlub" class="form-check-input" />
+        <span asp-validation-for="Customer.KundeKlub" class="text-danger"></span>
+    </div>
+
+    <h2>Manage Favorite Recipes</h2>
+    <div class="form-group">
+        <label>Select favorite recipes:</label>
+        @for (int index = 0; index < Model.Recipes.Count; index++)
+        {
+            bool isFavorite = Model.Customer.Favorites.Contains(Model.Recipes[index]);
+            <div class="form-check">
+                <input type="checkbox" asp-for="@Model.Favories[index]" class="form-check-input" checked="@isFavorite" />
+                <label class="form-check-label">@Model.Recipes[index].Name</label>
+            </div>
+        }
+    </div>
+
+    <h2>Manage Meal Plans</h2>
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Morning</th>
+                <th>Noon</th>
+                <th>Evening</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int weekday = 0; weekday < Model.WeekDays.Count; weekday++)
+            {
+                <tr>
+                    <td>@Model.WeekDays[weekday].ToString()</td>
+                    <td>
+                        <select 
+                            asp-for="@Model.MealPlanIdsMorning[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+                            <option value="0">-- Select Recipe --</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select
+                            asp-for="@Model.MealPlanIdsNoon[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+                            <option value="0">-- Select Recipe --</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select
+                            asp-for="@Model.MealPlanIdsEvening[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+                            <option value="0">-- Select Recipe --</option>
+                        </select>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>
+        <div class="form-group">
+            <input type="submit" value="Update" class="btn btn-primary" />
+        </div>
+    </p>
+</form>
+
+<p>
+    <a asp-page="GetAllCustomers">Back to List</a>
+</p>
