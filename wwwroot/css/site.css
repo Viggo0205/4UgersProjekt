@@ -1,18 +1,39 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
+
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+a.navbar-brand {
+    color: yellow;
+}
+
+.navbar {
+    background-color: #0A0A0a;
+}
+
+
+.navbar-nav .nav-link {
+    color: #aca7a7;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #605d5d;
+    border-bottom: 1px solid #605d5d;
+    border-top: 1px solid #605d5d
+}
+
+.footer {
+    background-color: #0A0A0a
 }
