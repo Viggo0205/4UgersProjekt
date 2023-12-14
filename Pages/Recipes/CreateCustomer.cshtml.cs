@@ -11,6 +11,8 @@ namespace _4UgersProjekt.Pages.Recipes
 		[BindProperty]
 		public Customer Customer { get; set; }
 
+        public string ErrorMessage {  get; set; }
+
         public List<Recipe> Recipes { get; set; }   = new List<Recipe>();
 
         [BindProperty]
@@ -126,12 +128,12 @@ namespace _4UgersProjekt.Pages.Recipes
             {
                 if (_customerService.Get()[i].Id == Customer.Id)
                 {
-                    throw new InvalidOperationException("Error");
-                }
-                _customerService.Add(Customer);
-
+                    ErrorMessage = "Id already in use";
+                    return Page();
+                }   
+                
             }
-
+            _customerService.Add(Customer);
 
             Console.WriteLine("Before redirecting to GetAllCustomers");
             return RedirectToPage("/Recipes/GetAllCustomers");
