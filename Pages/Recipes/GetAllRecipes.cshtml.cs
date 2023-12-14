@@ -27,6 +27,8 @@ namespace _4UgersProjekt.Pages.Recipes
 		public bool IsMicrowave { get; set; }
 		[BindProperty]
 		public bool IsPan { get; set; }
+		[BindProperty]
+		public bool Lactose { get; set; }
 
 		private IRecipeService _recipeService;
 		private IIngredientService _ingredientService;
@@ -106,6 +108,16 @@ namespace _4UgersProjekt.Pages.Recipes
 			Recipes = _recipeService.ToolFilter(ChosenTools).ToList();
 			return Page();
 		}
+		public IActionResult OnPostLactoseFilter()
+		{
+			if (Lactose)
+				Recipes = _recipeService.LactoseFilter().ToList();
+			else
+				Recipes = _recipeService.Get();
+
+			return Page();
+		}
+
 
 		public void OnGet()
         {

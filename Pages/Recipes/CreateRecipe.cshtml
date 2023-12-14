@@ -17,7 +17,12 @@
 		<label class="control-label">Tool Type</label>
 		<select asp-for="ChosenToolType" asp-items="Html.GetEnumSelectList<Models.ToolType>()" class="form-select form-select-lg mb-3"></select>
 	</div>
-
+	@* <div class="form-group">
+		<div>
+			<input type="checkbox" asp-for="IsPan" class="form-check-input" />
+			<label>Pan</label>
+		</div>
+	</div> *@
 
 	<div class="form-group">
 		<label asp-for="Name" class="control-label"></label>

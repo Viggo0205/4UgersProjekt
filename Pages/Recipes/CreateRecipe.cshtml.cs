@@ -20,7 +20,7 @@ namespace _4UgersProjekt.Pages.Recipes
 		public GoalType ChosenGoalType { get; set; }
 
 		[BindProperty]
-		public ToolType ChosenToolType  { get; private set; }
+		public ToolType ChosenToolType  { get; set; }
 
 		public List<Ingredient> Ingredients { get;}
 		[BindProperty]
