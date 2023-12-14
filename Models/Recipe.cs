@@ -65,9 +65,19 @@ namespace _4UgersProjekt.Models
             }
         }
 
-		public override string ToString()
-		{
-			return Name;
-		}
-	}
+        public override string ToString()
+        {
+            return Name;
+        }
+        public int getCount(int id)
+        {
+            foreach (RecipeComponent component in Ingredients)
+            {
+                if (component.Ingredient.Id == id)
+                    return component.Amount;
+            }
+            return 0;
+        }
+
+    }
 }

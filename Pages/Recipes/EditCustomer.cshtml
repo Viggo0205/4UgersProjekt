@@ -56,13 +56,22 @@
                 <tr>
                     <td>@Model.WeekDays[weekday].ToString()</td>
                     <td>
-                        <select asp-for="@Model.MealPlanIdsMorning[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+                        <select 
+                            asp-for="@Model.MealPlanIdsMorning[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+                            <option value="0">-- Select Recipe --</option>
+                        </select>
                     </td>
                     <td>
-                        <select asp-for="@Model.MealPlanIdsNoon[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+                        <select
+                            asp-for="@Model.MealPlanIdsNoon[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+                            <option value="0">-- Select Recipe --</option>
+                        </select>
                     </td>
                     <td>
-                        <select asp-for="@Model.MealPlanIdsEvening[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg"></select>
+                        <select
+                            asp-for="@Model.MealPlanIdsEvening[weekday]" asp-items="@Model.RecipeSelectList" class="form-select form-select-lg">
+                            <option value="0">-- Select Recipe --</option>
+                        </select>
                     </td>
                 </tr>
             }

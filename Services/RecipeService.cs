@@ -57,19 +57,12 @@ namespace _4UgersProjekt.Services
                 if (existingRecipe != null)
                 {
                     existingRecipe.Name = updatedRecipe.Name;
-
+                    existingRecipe.Ingredients.Clear();
                     foreach (RecipeComponent updatedComponent in updatedRecipe.Ingredients)
                     {
-                        RecipeComponent existingComponent = existingRecipe.Ingredients.FirstOrDefault(ic => ic.Ingredient.Id == updatedComponent.Ingredient.Id);
 
-                        if (existingComponent != null)
-                        {
-                            existingComponent.Amount = updatedComponent.Amount;
-                        }
-                        else
-                        {
                             existingRecipe.Ingredients.Add(updatedComponent);
-                        }
+                        
                     }
 
                     _jsonFile.SaveJson(_data);

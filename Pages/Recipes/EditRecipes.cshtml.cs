@@ -3,19 +3,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using _4UgersProjekt.Models;
 using _4UgersProjekt.Services;
+using System.Diagnostics.Eventing.Reader;
+using System.Timers;
 
 namespace _4UgersProjekt.Pages.Recipes
 {
     public class EditRecipesModel : PageModel
     {
         private IRecipeService _repo;
-
         public EditRecipesModel(IRecipeService repo, IIngredientService ingredientService)
         {
             _repo = repo;
             Ingredients = ingredientService.Get();
             Amount = new List<int>();
+           
             for (int i = 0; i < Ingredients.Count; i++)
+            
             {
                 Amount.Add(0);
             }
@@ -27,7 +30,7 @@ namespace _4UgersProjekt.Pages.Recipes
         public int Id { get; set; }
         [BindProperty]
         public Models.Recipe Recipe { get; set; }
-        public List<Ingredient> Ingredients { get; }
+        public List<Ingredient> Ingredients { get; set; }
         [BindProperty]
         public List<int> Amount { get; }
 
@@ -36,7 +39,15 @@ namespace _4UgersProjekt.Pages.Recipes
             Models.Recipe? recipe = _repo.Get(id);
 
             if (recipe != null)
+            {
+
                 Recipe = recipe;
+                for (int i = 0; i < Ingredients.Count; i++) 
+                {
+                    Amount[i] = recipe.getCount(Ingredients[i].Id);
+                }
+
+            }
             else
                 return RedirectToPage("/NotFound");
 
@@ -47,12 +58,14 @@ namespace _4UgersProjekt.Pages.Recipes
         {
             Models.Recipe updatedRecipe = new Models.Recipe
             {
-                Id = Id,
-                Name = Name
+                Id = Recipe.Id,
+                Name = Recipe.Name
             };
 
             for (int i = 0; i < Ingredients.Count; i++)
             {
+                Console.WriteLine($"Processing Ingredient: {Ingredients[i].Name}, Amount: {Amount[i]}");
+
                 if (Amount[i] > 0)
                 {
                     updatedRecipe.Ingredients.Add(new RecipeComponent
@@ -61,7 +74,9 @@ namespace _4UgersProjekt.Pages.Recipes
                         Amount = Amount[i]
                     });
                 }
+              
             }
+
 
             _repo.Update(updatedRecipe);
             return RedirectToPage("GetAllRecipes");
