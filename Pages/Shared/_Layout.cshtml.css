@@ -7,7 +7,10 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-a {
+nav a:hover{
+    color: yellow
+}
+nav a {
   color: #0077cc;
 }
 

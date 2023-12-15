@@ -29,9 +29,8 @@ a.navbar-brand {
 
 body {
     margin-bottom: 60px;
-    background-color: #605d5d;
     border-bottom: 1px solid #605d5d;
-    border-top: 1px solid #605d5d
+    border-top: 1px solid #605d5d;
 }
 
 .footer {
