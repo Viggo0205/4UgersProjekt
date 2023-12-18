@@ -8,7 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\workout.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\workout.png" />
+    <None Include="wwwroot\workout.png" />
   </ItemGroup>
 
   <ItemGroup>
