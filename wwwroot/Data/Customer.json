@@ -2,7 +2,99 @@
   {
     "MealPlans": {
       "Monday": {
-        "Morning": null,
+        "Morning": {
+          "Id": 1,
+          "GoalT": 0,
+          "ToolT": 0,
+          "Name": "Simple High-Protein Lasagne",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "lean beef mince",
+                "FatPct": 5,
+                "CarbPct": 0,
+                "ProtPct": 22,
+                "Calories": 620
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 2,
+                "Name": "Carrot",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 10
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 3,
+                "Name": "Celery stick",
+                "FatPct": 0,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 3
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 4,
+                "Name": "Onion",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 21
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 5,
+                "Name": "Tomato Sauce",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 2,
+                "Calories": 336
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 6,
+                "Name": "cottage cheese",
+                "FatPct": 1,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 309
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 7,
+                "Name": "parmesan Cheese",
+                "FatPct": 3,
+                "CarbPct": 1,
+                "ProtPct": 4,
+                "Calories": 125
+              },
+              "Amount": 1
+            }
+          ],
+          "TotalCalories": 1424
+        },
         "Noon": null,
         "Evening": null
       },
@@ -37,64 +129,617 @@
         "Evening": null
       }
     },
-    "Id": 0,
-    "Name": "ffefe",
-    "Email": "zeroh8te@gmail.com",
-    "KundeKlub": false,
+    "Id": 1,
+    "Name": "Oliver Kl\u00F8vvik",
+    "Email": "olk002@edu.zealand.dk",
+    "KundeKlub": true,
     "Favorites": [
       {
-        "Id": 10,
+        "Id": 1,
         "GoalT": 0,
         "ToolT": 0,
-        "Name": "Kagemad",
+        "Name": "Simple High-Protein Lasagne",
         "Ingredients": [
           {
             "Ingredient": {
               "IngredientT": 0,
               "Id": 1,
-              "Name": "tobias",
-              "FatPct": 0,
+              "Name": "lean beef mince",
+              "FatPct": 5,
               "CarbPct": 0,
-              "ProtPct": 0,
-              "Calories": 40000000
+              "ProtPct": 22,
+              "Calories": 620
             },
-            "Amount": 4
+            "Amount": 1
           },
           {
             "Ingredient": {
-              "IngredientT": 0,
-              "Id": 31,
-              "Name": "jonas",
-              "FatPct": 0,
-              "CarbPct": 0,
-              "ProtPct": 0,
-              "Calories": 400000
+              "IngredientT": 1,
+              "Id": 2,
+              "Name": "Carrot",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 1,
+              "Calories": 10
             },
-            "Amount": 10
-          }
-        ],
-        "TotalCalories": 40400000
-      },
-      {
-        "Id": 12,
-        "GoalT": 0,
-        "ToolT": 0,
-        "Name": "Mattis mad",
-        "Ingredients": [
+            "Amount": 1
+          },
           {
             "Ingredient": {
-              "IngredientT": 0,
-              "Id": 12,
-              "Name": "Matti",
+              "IngredientT": 1,
+              "Id": 3,
+              "Name": "Celery stick",
               "FatPct": 0,
-              "CarbPct": 0,
-              "ProtPct": 0,
-              "Calories": 30
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 3
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 4,
+              "Name": "Onion",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 1,
+              "Calories": 21
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 2,
+              "Id": 5,
+              "Name": "Tomato Sauce",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 2,
+              "Calories": 336
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 6,
+              "Name": "cottage cheese",
+              "FatPct": 1,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 309
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 7,
+              "Name": "parmesan Cheese",
+              "FatPct": 3,
+              "CarbPct": 1,
+              "ProtPct": 4,
+              "Calories": 125
             },
             "Amount": 1
           }
         ],
-        "TotalCalories": 30
+        "TotalCalories": 1424
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": {
+          "Id": 1,
+          "GoalT": 0,
+          "ToolT": 0,
+          "Name": "Simple High-Protein Lasagne",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "lean beef mince",
+                "FatPct": 5,
+                "CarbPct": 0,
+                "ProtPct": 22,
+                "Calories": 620
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 2,
+                "Name": "Carrot",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 10
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 3,
+                "Name": "Celery stick",
+                "FatPct": 0,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 3
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 4,
+                "Name": "Onion",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 21
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 5,
+                "Name": "Tomato Sauce",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 2,
+                "Calories": 336
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 6,
+                "Name": "cottage cheese",
+                "FatPct": 1,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 309
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 7,
+                "Name": "parmesan Cheese",
+                "FatPct": 3,
+                "CarbPct": 1,
+                "ProtPct": 4,
+                "Calories": 125
+              },
+              "Amount": 1
+            }
+          ],
+          "TotalCalories": 1424
+        },
+        "Noon": {
+          "Id": 1,
+          "GoalT": 0,
+          "ToolT": 0,
+          "Name": "Simple High-Protein Lasagne",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "lean beef mince",
+                "FatPct": 5,
+                "CarbPct": 0,
+                "ProtPct": 22,
+                "Calories": 620
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 2,
+                "Name": "Carrot",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 10
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 3,
+                "Name": "Celery stick",
+                "FatPct": 0,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 3
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 4,
+                "Name": "Onion",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 21
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 5,
+                "Name": "Tomato Sauce",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 2,
+                "Calories": 336
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 6,
+                "Name": "cottage cheese",
+                "FatPct": 1,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 309
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 7,
+                "Name": "parmesan Cheese",
+                "FatPct": 3,
+                "CarbPct": 1,
+                "ProtPct": 4,
+                "Calories": 125
+              },
+              "Amount": 1
+            }
+          ],
+          "TotalCalories": 1424
+        },
+        "Evening": {
+          "Id": 1,
+          "GoalT": 0,
+          "ToolT": 0,
+          "Name": "Simple High-Protein Lasagne",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "lean beef mince",
+                "FatPct": 5,
+                "CarbPct": 0,
+                "ProtPct": 22,
+                "Calories": 620
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 2,
+                "Name": "Carrot",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 10
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 3,
+                "Name": "Celery stick",
+                "FatPct": 0,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 3
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 4,
+                "Name": "Onion",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 21
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 5,
+                "Name": "Tomato Sauce",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 2,
+                "Calories": 336
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 6,
+                "Name": "cottage cheese",
+                "FatPct": 1,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 309
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 7,
+                "Name": "parmesan Cheese",
+                "FatPct": 3,
+                "CarbPct": 1,
+                "ProtPct": 4,
+                "Calories": 125
+              },
+              "Amount": 1
+            }
+          ],
+          "TotalCalories": 1424
+        }
+      },
+      "Wedensday": {
+        "Morning": {
+          "Id": 1,
+          "GoalT": 0,
+          "ToolT": 0,
+          "Name": "Simple High-Protein Lasagne",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 0,
+                "Id": 1,
+                "Name": "lean beef mince",
+                "FatPct": 5,
+                "CarbPct": 0,
+                "ProtPct": 22,
+                "Calories": 620
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 2,
+                "Name": "Carrot",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 10
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 3,
+                "Name": "Celery stick",
+                "FatPct": 0,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 3
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 4,
+                "Name": "Onion",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 21
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 2,
+                "Id": 5,
+                "Name": "Tomato Sauce",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 2,
+                "Calories": 336
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 6,
+                "Name": "cottage cheese",
+                "FatPct": 1,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 309
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 7,
+                "Name": "parmesan Cheese",
+                "FatPct": 3,
+                "CarbPct": 1,
+                "ProtPct": 4,
+                "Calories": 125
+              },
+              "Amount": 1
+            }
+          ],
+          "TotalCalories": 1424
+        },
+        "Noon": {
+          "Id": 2,
+          "GoalT": 1,
+          "ToolT": 2,
+          "Name": "Salad",
+          "Ingredients": [
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 2,
+                "Name": "Carrot",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 10
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 3,
+                "Name": "Celery stick",
+                "FatPct": 0,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 3
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 4,
+                "Name": "Onion",
+                "FatPct": 1,
+                "CarbPct": 8,
+                "ProtPct": 1,
+                "Calories": 21
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 6,
+                "Name": "cottage cheese",
+                "FatPct": 1,
+                "CarbPct": 1,
+                "ProtPct": 1,
+                "Calories": 309
+              },
+              "Amount": 1
+            },
+            {
+              "Ingredient": {
+                "IngredientT": 1,
+                "Id": 7,
+                "Name": "parmesan Cheese",
+                "FatPct": 3,
+                "CarbPct": 1,
+                "ProtPct": 4,
+                "Calories": 125
+              },
+              "Amount": 1
+            }
+          ],
+          "TotalCalories": 468
+        },
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 2,
+    "Name": "Jonas Arne S\u00F8dahl Laursen",
+    "Email": "jol002@edu.zealand.dk",
+    "KundeKlub": true,
+    "Favorites": [
+      {
+        "Id": 0,
+        "GoalT": 2,
+        "ToolT": 1,
+        "Name": "high protin Mealted Cheese",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 6,
+              "Name": "cottage cheese",
+              "FatPct": 1,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 309
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 7,
+              "Name": "parmesan Cheese",
+              "FatPct": 3,
+              "CarbPct": 1,
+              "ProtPct": 4,
+              "Calories": 125
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 434
       }
     ]
   },
@@ -136,118 +781,28 @@
         "Evening": null
       }
     },
-    "Id": 777,
-    "Name": "qq",
-    "Email": "qq",
+    "Id": 3,
+    "Name": "Matti Bj\u00F8rn Barlach",
+    "Email": "mab008@edu.zealand.dk",
     "KundeKlub": false,
-    "Favorites": [
-      {
-        "Id": 23,
-        "GoalT": 0,
-        "Name": "hans",
-        "Ingredients": [],
-        "TotalCalories": 0
-      },
-      {
-        "Id": 3,
-        "GoalT": 0,
-        "Name": "sdf",
-        "Ingredients": [],
-        "TotalCalories": 0
-      }
-    ]
+    "Favorites": []
   },
   {
     "MealPlans": {
       "Monday": {
-        "Morning": {
-          "Id": 12,
-          "GoalT": 0,
-          "Name": "shut up",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 1,
-                "Name": "tobias",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 40000000
-              },
-              "Amount": 2
-            }
-          ],
-          "TotalCalories": 40000000
-        },
-        "Noon": {
-          "Id": 50,
-          "GoalT": 0,
-          "Name": "abe",
-          "Ingredients": [],
-          "TotalCalories": 0
-        },
+        "Morning": null,
+        "Noon": null,
         "Evening": null
       },
       "Tuesday": {
         "Morning": null,
-        "Noon": {
-          "Id": 13,
-          "GoalT": 0,
-          "Name": "shut up 2",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 31,
-                "Name": "jonas",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 400000
-              },
-              "Amount": 12
-            }
-          ],
-          "TotalCalories": 400000
-        },
-        "Evening": {
-          "Id": 50,
-          "GoalT": 0,
-          "Name": "abe",
-          "Ingredients": [],
-          "TotalCalories": 0
-        }
+        "Noon": null,
+        "Evening": null
       },
       "Wedensday": {
-        "Morning": {
-          "Id": 13,
-          "GoalT": 0,
-          "Name": "shut up 2",
-          "Ingredients": [
-            {
-              "Ingredient": {
-                "Id": 31,
-                "Name": "jonas",
-                "FatPct": 0,
-                "CarbPct": 0,
-                "ProtPct": 0,
-                "IngredientT": 0,
-                "Calories": 400000
-              },
-              "Amount": 12
-            }
-          ],
-          "TotalCalories": 400000
-        },
+        "Morning": null,
         "Noon": null,
-        "Evening": {
-          "Id": 123,
-          "GoalT": 0,
-          "Name": "hanmse",
-          "Ingredients": [],
-          "TotalCalories": 0
-        }
+        "Evening": null
       },
       "Thursday": {
         "Morning": null,
@@ -258,12 +813,296 @@
         "Morning": null,
         "Noon": null,
         "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
       }
     },
-    "Id": 543,
-    "Name": "hej",
-    "Email": "jhasdasd",
+    "Id": 4,
+    "Name": "Tobias Schultz",
+    "Email": "tos001@edu.zealand.dk",
     "KundeKlub": false,
-    "Favorites": []
+    "Favorites": [
+      {
+        "Id": 1,
+        "GoalT": 0,
+        "ToolT": 0,
+        "Name": "Simple High-Protein Lasagne",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 0,
+              "Id": 1,
+              "Name": "lean beef mince",
+              "FatPct": 5,
+              "CarbPct": 0,
+              "ProtPct": 22,
+              "Calories": 620
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 2,
+              "Name": "Carrot",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 1,
+              "Calories": 10
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 3,
+              "Name": "Celery stick",
+              "FatPct": 0,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 3
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 4,
+              "Name": "Onion",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 1,
+              "Calories": 21
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 2,
+              "Id": 5,
+              "Name": "Tomato Sauce",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 2,
+              "Calories": 336
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 6,
+              "Name": "cottage cheese",
+              "FatPct": 1,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 309
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 7,
+              "Name": "parmesan Cheese",
+              "FatPct": 3,
+              "CarbPct": 1,
+              "ProtPct": 4,
+              "Calories": 125
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 1424
+      },
+      {
+        "Id": 2,
+        "GoalT": 1,
+        "ToolT": 2,
+        "Name": "Salad",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 2,
+              "Name": "Carrot",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 1,
+              "Calories": 10
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 3,
+              "Name": "Celery stick",
+              "FatPct": 0,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 3
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 4,
+              "Name": "Onion",
+              "FatPct": 1,
+              "CarbPct": 8,
+              "ProtPct": 1,
+              "Calories": 21
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 6,
+              "Name": "cottage cheese",
+              "FatPct": 1,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 309
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 7,
+              "Name": "parmesan Cheese",
+              "FatPct": 3,
+              "CarbPct": 1,
+              "ProtPct": 4,
+              "Calories": 125
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 468
+      },
+      {
+        "Id": 0,
+        "GoalT": 2,
+        "ToolT": 1,
+        "Name": "high protin Mealted Cheese",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 6,
+              "Name": "cottage cheese",
+              "FatPct": 1,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 309
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 7,
+              "Name": "parmesan Cheese",
+              "FatPct": 3,
+              "CarbPct": 1,
+              "ProtPct": 4,
+              "Calories": 125
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 434
+      }
+    ]
+  },
+  {
+    "MealPlans": {
+      "Monday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Tuesday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Wedensday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Thursday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Friday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Saturday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      },
+      "Sunday": {
+        "Morning": null,
+        "Noon": null,
+        "Evening": null
+      }
+    },
+    "Id": 99,
+    "Name": "Victor Tadeusz Ulstrup Olszowski",
+    "Email": "vio001@edu.zealand.dk",
+    "KundeKlub": true,
+    "Favorites": [
+      {
+        "Id": 0,
+        "GoalT": 2,
+        "ToolT": 1,
+        "Name": "high protin Mealted Cheese",
+        "Ingredients": [
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 6,
+              "Name": "cottage cheese",
+              "FatPct": 1,
+              "CarbPct": 1,
+              "ProtPct": 1,
+              "Calories": 309
+            },
+            "Amount": 1
+          },
+          {
+            "Ingredient": {
+              "IngredientT": 1,
+              "Id": 7,
+              "Name": "parmesan Cheese",
+              "FatPct": 3,
+              "CarbPct": 1,
+              "ProtPct": 4,
+              "Calories": 125
+            },
+            "Amount": 1
+          }
+        ],
+        "TotalCalories": 434
+      }
+    ]
   }
 ]

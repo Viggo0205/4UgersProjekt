@@ -1,38 +1,65 @@
 [
   {
-    "IngredientT": 1,
-    "Id": 40,
-    "Name": "Cunt",
-    "FatPct": 0,
-    "CarbPct": 0,
-    "ProtPct": 0,
-    "Calories": 1234
-  },
-  {
-    "IngredientT": 0,
-    "Id": 71,
-    "Name": "kage",
-    "FatPct": 40,
-    "CarbPct": 10,
-    "ProtPct": 30,
-    "Calories": 9012390
-  },
-  {
-    "IngredientT": 1,
-    "Id": 100,
-    "Name": "kagemad2",
-    "FatPct": 40,
-    "CarbPct": 20,
-    "ProtPct": 30,
-    "Calories": 400000
-  },
-  {
     "IngredientT": 0,
     "Id": 1,
-    "Name": "tobia",
-    "FatPct": 0,
+    "Name": "lean beef mince",
+    "FatPct": 5,
     "CarbPct": 0,
-    "ProtPct": 0,
-    "Calories": 0
+    "ProtPct": 22,
+    "Calories": 620
+  },
+  {
+    "IngredientT": 1,
+    "Id": 2,
+    "Name": "Carrot",
+    "FatPct": 1,
+    "CarbPct": 8,
+    "ProtPct": 1,
+    "Calories": 10
+  },
+  {
+    "IngredientT": 1,
+    "Id": 3,
+    "Name": "Celery stick",
+    "FatPct": 0,
+    "CarbPct": 1,
+    "ProtPct": 1,
+    "Calories": 3
+  },
+  {
+    "IngredientT": 1,
+    "Id": 4,
+    "Name": "Onion",
+    "FatPct": 1,
+    "CarbPct": 8,
+    "ProtPct": 1,
+    "Calories": 21
+  },
+  {
+    "IngredientT": 2,
+    "Id": 5,
+    "Name": "Tomato Sauce",
+    "FatPct": 1,
+    "CarbPct": 8,
+    "ProtPct": 2,
+    "Calories": 336
+  },
+  {
+    "IngredientT": 1,
+    "Id": 6,
+    "Name": "cottage cheese",
+    "FatPct": 1,
+    "CarbPct": 1,
+    "ProtPct": 1,
+    "Calories": 309
+  },
+  {
+    "IngredientT": 1,
+    "Id": 7,
+    "Name": "parmesan Cheese",
+    "FatPct": 3,
+    "CarbPct": 1,
+    "ProtPct": 4,
+    "Calories": 125
   }
 ]
