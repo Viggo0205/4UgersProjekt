@@ -1,6 +1,6 @@
 ﻿using _4UgersProjekt.Models;
 using Microsoft.AspNetCore.Hosting;
-
+//Victor og Jonas
 namespace _4UgersProjekt.Services
 {
 	public class IngredientService : DataRepository<Ingredient>, IIngredientService

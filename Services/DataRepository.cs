@@ -1,4 +1,4 @@
-﻿
+﻿//Victor
 namespace _4UgersProjekt.Services
 {
     public interface IHaveIdAndName

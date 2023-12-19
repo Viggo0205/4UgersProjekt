@@ -1,6 +1,7 @@
 ﻿using _4UgersProjekt.Models;
 using System.Linq;
 
+//Jonas, Matti og Tobias
 namespace _4UgersProjekt.Services
 {
     public class RecipeService : DataRepository<Recipe>, IRecipeService
@@ -62,19 +63,7 @@ namespace _4UgersProjekt.Services
 
 			return filterList;
 		}
-		//public IEnumerable<Recipe> LactoseFilter(List<Recipe> RecipeLactoseFilterList)
-		//{
-		//	List<Recipe> filterList = new List<Recipe>();
-		//	for (int i = 0; i < RecipeLactoseFilterList; i++)
-		//	{
-		//		for (int j = 0; j < _recipes.LactoseList.Count; i++)
-		//			if (_recipes.Ingredients.Contains(j)
-		//			{
-		//				filterList.Add(i);
-		//			}
-		//	}
-		//	return filterList;
-		//}
+		
 
 
 		public IEnumerable<Recipe> LactoseFilter()
@@ -98,19 +87,7 @@ namespace _4UgersProjekt.Services
 			return filterList;
 		}
 
-		//public IEnumerable<Recipe> LactoseFilter(List<Recipe> RecipeLactoseFilterList)
-		//{
-		//	List<Recipe> filterList = new List<Recipe>();
-		//	foreach (var i in _data)
-		//	{
-		//		foreach (var j in _recipes.LactoseList)
-		//			if (filterlist[i] ==LactoseFilter)
-		//			{
-		//				filterList.Add(i);
-		//			}
-		//	}
-		//	return filterList;
-		//}
+		
 
 
 		public override void Update(Recipe updatedRecipe)

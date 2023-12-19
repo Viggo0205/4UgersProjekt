@@ -1,4 +1,5 @@
-﻿namespace _4UgersProjekt.Services
+﻿// Victor
+namespace _4UgersProjekt.Services
 {
     public interface IService<T>
     {
