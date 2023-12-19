@@ -1,110 +1,197 @@
 [
   {
-    "Id": 50,
+    "Id": 1,
     "GoalT": 0,
-    "Name": "mmm",
+    "ToolT": 0,
+    "Name": "Simple High-Protein Lasagne",
     "Ingredients": [
-      {
-        "Ingredient": {
-          "IngredientT": 1,
-          "Id": 40,
-          "Name": "Cunt",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "Calories": 1234
-        },
-        "Amount": 3
-      },
       {
         "Ingredient": {
           "IngredientT": 0,
-          "Id": 71,
-          "Name": "kage",
-          "FatPct": 40,
-          "CarbPct": 10,
-          "ProtPct": 30,
-          "Calories": 9012390
-        },
-        "Amount": 6
-      }
-    ],
-    "TotalCalories": 9013624
-  },
-  {
-    "Id": 23,
-    "GoalT": 0,
-    "Name": "hans",
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "IngredientT": 1,
-          "Id": 40,
-          "Name": "Cunt",
-          "FatPct": 0,
+          "Id": 1,
+          "Name": "lean beef mince",
+          "FatPct": 5,
           "CarbPct": 0,
-          "ProtPct": 0,
-          "Calories": 1234
+          "ProtPct": 22,
+          "Calories": 620
         },
-        "Amount": 5
-      }
-    ],
-    "TotalCalories": 1234
-  },
-  {
-    "Id": 123,
-    "GoalT": 0,
-    "Name": "hanmse",
-    "Ingredients": [
-      {
-        "Ingredient": {
-          "IngredientT": 1,
-          "Id": 40,
-          "Name": "Cunt",
-          "FatPct": 0,
-          "CarbPct": 0,
-          "ProtPct": 0,
-          "Calories": 1234
-        },
-        "Amount": 32
+        "Amount": 1
       },
       {
         "Ingredient": {
           "IngredientT": 1,
-          "Id": 100,
-          "Name": "kagemad2",
-          "FatPct": 40,
-          "CarbPct": 20,
-          "ProtPct": 30,
-          "Calories": 400000
+          "Id": 2,
+          "Name": "Carrot",
+          "FatPct": 1,
+          "CarbPct": 8,
+          "ProtPct": 1,
+          "Calories": 10
         },
-        "Amount": 23
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 3,
+          "Name": "Celery stick",
+          "FatPct": 0,
+          "CarbPct": 1,
+          "ProtPct": 1,
+          "Calories": 3
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 4,
+          "Name": "Onion",
+          "FatPct": 1,
+          "CarbPct": 8,
+          "ProtPct": 1,
+          "Calories": 21
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 2,
+          "Id": 5,
+          "Name": "Tomato Sauce",
+          "FatPct": 1,
+          "CarbPct": 8,
+          "ProtPct": 2,
+          "Calories": 336
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 6,
+          "Name": "cottage cheese",
+          "FatPct": 1,
+          "CarbPct": 1,
+          "ProtPct": 1,
+          "Calories": 309
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 7,
+          "Name": "parmesan Cheese",
+          "FatPct": 3,
+          "CarbPct": 1,
+          "ProtPct": 4,
+          "Calories": 125
+        },
+        "Amount": 1
       }
     ],
-    "TotalCalories": 401234
+    "TotalCalories": 1424
   },
   {
-    "Id": 10,
+    "Id": 2,
     "GoalT": 1,
     "ToolT": 2,
-    "Name": "Tobias sc",
-    "Ingredients": [],
-    "TotalCalories": 0
+    "Name": "Salad",
+    "Ingredients": [
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 2,
+          "Name": "Carrot",
+          "FatPct": 1,
+          "CarbPct": 8,
+          "ProtPct": 1,
+          "Calories": 10
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 3,
+          "Name": "Celery stick",
+          "FatPct": 0,
+          "CarbPct": 1,
+          "ProtPct": 1,
+          "Calories": 3
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 4,
+          "Name": "Onion",
+          "FatPct": 1,
+          "CarbPct": 8,
+          "ProtPct": 1,
+          "Calories": 21
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 6,
+          "Name": "cottage cheese",
+          "FatPct": 1,
+          "CarbPct": 1,
+          "ProtPct": 1,
+          "Calories": 309
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 7,
+          "Name": "parmesan Cheese",
+          "FatPct": 3,
+          "CarbPct": 1,
+          "ProtPct": 4,
+          "Calories": 125
+        },
+        "Amount": 1
+      }
+    ],
+    "TotalCalories": 468
   },
   {
-    "Id": 4,
-    "GoalT": 1,
-    "ToolT": 2,
-    "Name": "tobiass",
-    "Ingredients": [],
-    "TotalCalories": 0
-  },
-  {
-    "Id": 0,
-    "GoalT": 0,
-    "ToolT": 0,
-    "Name": null,
-    "Ingredients": [],
-    "TotalCalories": 0
+    "Id": 6,
+    "GoalT": 2,
+    "ToolT": 1,
+    "Name": "high protin Mealted Cheese",
+    "Ingredients": [
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 6,
+          "Name": "cottage cheese",
+          "FatPct": 1,
+          "CarbPct": 1,
+          "ProtPct": 1,
+          "Calories": 309
+        },
+        "Amount": 1
+      },
+      {
+        "Ingredient": {
+          "IngredientT": 1,
+          "Id": 7,
+          "Name": "parmesan Cheese",
+          "FatPct": 3,
+          "CarbPct": 1,
+          "ProtPct": 4,
+          "Calories": 125
+        },
+        "Amount": 1
+      }
+    ],
+    "TotalCalories": 434
   }
 ]
