@@ -1,6 +1,7 @@
 ﻿using _4UgersProjekt.Services;
 using System.ComponentModel.DataAnnotations;
 
+//Matti
 namespace _4UgersProjekt.Models
 {
 	public enum MealType

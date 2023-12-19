@@ -3,6 +3,7 @@ using _4UgersProjekt.Services;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
+//Victor og Oliver
 namespace _4UgersProjekt.Models
 {
     public class Customer : IHaveIdAndName
