@@ -48,7 +48,7 @@ namespace _4UgersProjekt.Models
 
 		public ToolType ToolT { get; set; }
 
-        public static List<string> LactoseList {  get; set; } = new List<string>() { "smør","mælk","ost","cheese"};
+        public static List<string> LactoseList {  get; set; } = new List<string>() { "smør","mælk","ost","cheese","parmesan cheese","cottage cheese" };
 
 		public string Name { get; set; }
 
