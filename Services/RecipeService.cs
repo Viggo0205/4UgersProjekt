@@ -1,6 +1,7 @@
 ﻿using _4UgersProjekt.Models;
 using System.Linq;
 
+//Jonas, Matti og Tobias
 namespace _4UgersProjekt.Services
 {
     public class RecipeService : DataRepository<Recipe>, IRecipeService

@@ -1,4 +1,5 @@
-﻿namespace _4UgersProjekt.Models
+﻿// Victor
+namespace _4UgersProjekt.Models
 {
 	public class RecipeComponent
 	{

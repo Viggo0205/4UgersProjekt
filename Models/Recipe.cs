@@ -1,6 +1,7 @@
 ﻿using _4UgersProjekt.Services;
 using System.ComponentModel.DataAnnotations;
 
+//Matti
 namespace _4UgersProjekt.Models
 {
 	public enum MealType
@@ -47,7 +48,7 @@ namespace _4UgersProjekt.Models
 
 		public ToolType ToolT { get; set; }
 
-        public static List<string> LactoseList {  get; set; } = new List<string>() { "smør","mælk","ost"};
+        public static List<string> LactoseList {  get; set; } = new List<string>() { "smør","mælk","ost","cheese"};
 
 		public string Name { get; set; }
 

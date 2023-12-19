@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
+// Victor
 namespace _4UgersProjekt.Models
 {
 	public class Ingredient : IHaveIdAndName
